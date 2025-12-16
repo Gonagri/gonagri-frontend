@@ -1,293 +1,111 @@
-🌱 GONAGRI - Agricultural Marketplace Platform
-Direct to Market. Direct to Growth.
+<h1 align="center">
+  🌱 GONAGRI
+</h1>
 
-https://img.shields.io/badge/Next.js-14.0-black?style=for-the-badge&logo=next.js
-https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript
-https://img.shields.io/badge/Tailwind_CSS-3.3-38B2AC?style=for-the-badge&logo=tailwind-css
-https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge
+<p align="center">
+  <strong>Direct to Market. Direct to Growth.</strong>
+</p>
 
-📖 Overview
-GONAGRI is a B2B digital marketplace connecting African farmers directly with commercial buyers (restaurants, hotels, supermarkets, processors). Our platform eliminates middlemen, ensures fair pricing for farmers, and provides buyers with reliable access to fresh, high-quality produce.
+<p align="center">
+  A B2B digital marketplace connecting African farmers directly with commercial buyers.
+</p>
 
-Live Demo: https://gonagri.com (Coming Soon Page)
+<p align="center">
+  <a href="#-tech-stack">Tech Stack</a> •
+  <a href="#-features">Features</a> •
+  <a href="#-quick-start">Quick Start</a> •
+  <a href="#-project-structure">Structure</a> •
+  <a href="#-team">Team</a>
+</p>
 
-🎯 Mission
-To empower African farmers with direct market access and digital tools that unlock their full economic potential, while providing businesses with a streamlined, transparent, and reliable agricultural supply chain.
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js" alt="Next.js">
+  <img src="https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Tailwind-3-38B2AC?style=flat-square&logo=tailwind-css" alt="Tailwind">
+  <img src="https://img.shields.io/badge/Node.js-20-339933?style=flat-square&logo=node.js" alt="Node.js">
+  <img src="https://img.shields.io/badge/Status-In%20Development-yellow?style=flat-square" alt="Status">
+</p>
 
-✨ Features
-👨‍🌾 For Farmers
-Digital Storefront - Create and manage product listings with photos
+---
 
-Inventory Tracking - Real-time stock management
+## 🚀 Overview
 
-Secure Wallet - Receive and manage payments in-app
+**GONAGRI** revolutionizes agricultural trade by eliminating middlemen and connecting farmers directly with restaurants, hotels, supermarkets, and food processors.
 
-SMS Notifications - Get order alerts on any phone
+### Why GONAGRI?
+- **For Farmers:** Fair prices, direct market access, digital tools
+- **For Buyers:** Reliable sourcing, transparent pricing, quality assurance
+- **For Everyone:** Secure payments, verified users, efficient logistics
 
-Order Management - View, accept, and track orders
+---
 
-🏢 For Buyers
-Bulk Ordering - Place large orders across multiple farms
+## ✨ Key Features
 
-Verified Farm Profiles - Source from trusted, platform-verified farmers
+### 👨‍🌾 **Farmer Dashboard**
+- Digital storefront with product listings
+- Inventory management system
+- Secure payment wallet
+- Order tracking & notifications
 
-Transparent Pricing - Clear costs with no hidden fees
+### 🏢 **Buyer Marketplace**
+- Bulk ordering from multiple farmers
+- Quality grading & transparent pricing
+- Verified farm profiles
+- Delivery scheduling
 
-Quality Grading - Filter by standardized quality grades (A, B, C)
+### ⚙️ **Platform Core**
+- Escrow payment system (5-15% commission)
+- User verification & rating system
+- Logistics partner integration
+- SMS/email notifications
 
-Delivery Scheduling - Choose pickup or delivery options
+---
 
-⚙️ Platform Core
-Escrow Payments - Secure transactions with funds held until delivery confirmation
+## 🛠 Tech Stack
 
-Tiered Commission - 5% (<₦50k) / 15% (≥₦50k) platform fees
+### Frontend
+- **Framework:** [Next.js 14](https://nextjs.org/) (App Router)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Forms:** [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/)
 
-Verification System - KYC checks for farmers and buyers
+### Backend (Separate Repo)
+- **Runtime:** Node.js + Express.js
+- **Database:** PostgreSQL + Prisma
+- **Auth:** JWT with refresh tokens
+- **Payments:** Flutterwave/Paystack
+- **Deployment:** Railway/Render
 
-Rating System - Build trust through community feedback
+---
 
-Logistics Integration - Connect with vetted delivery partners
+## 🚦 Quick Start
 
-🏗️ Tech Stack
-Frontend
-Framework: Next.js 14 (App Router)
-
-Language: TypeScript
-
-Styling: Tailwind CSS
-
-State Management: React Context + Custom Hooks
-
-Form Handling: React Hook Form + Zod Validation
-
-Icons: Lucide React
-
-HTTP Client: Axios
-
-Backend (Separate Repository)
-Runtime: Node.js + Express.js
-
-Database: PostgreSQL with Prisma ORM
-
-Authentication: JWT with refresh tokens
-
-Payments: Flutterwave/Paystack Integration
-
-SMS: Twilio or local providers
-
-Deployment: Railway/Render
-
-📁 Project Structure
-text
-gonagri-frontend/
-├── public/                    # Static assets
-│   ├── fonts/                # Custom fonts (Inter, Poppins)
-│   ├── images/               # Images and illustrations
-│   └── icons/                # SVG icons
-├── src/
-│   ├── app/                  # Next.js App Router
-│   │   ├── coming-soon/      # Launch page (CURRENTLY LIVE)
-│   │   ├── (main-app)/       # Full application (IN DEVELOPMENT)
-│   │   │   ├── (auth)/       # Authentication pages
-│   │   │   ├── (marketplace)/ # Public marketplace
-│   │   │   ├── farmer/       # Farmer dashboard
-│   │   │   ├── buyer/        # Buyer dashboard
-│   │   │   ├── admin/        # Admin panel
-│   │   │   └── layout.tsx    # Main app layout
-│   │   ├── layout.tsx        # Root layout
-│   │   └── globals.css       # Global styles
-│   ├── components/           # Reusable components
-│   │   ├── coming-soon/      # Launch page components
-│   │   ├── ui/               # Base UI components
-│   │   ├── marketplace/      # Marketplace components
-│   │   ├── farmer/           # Farmer-specific components
-│   │   ├── buyer/            # Buyer-specific components
-│   │   └── shared/           # Shared components
-│   ├── lib/                  # Utilities and helpers
-│   │   ├── api/              # API client configurations
-│   │   ├── constants/        # App constants
-│   │   ├── utils/            # Utility functions
-│   │   └── validation/       # Form validation schemas
-│   ├── hooks/                # Custom React hooks
-│   ├── types/                # TypeScript type definitions
-│   └── styles/               # Additional styles
-├── tailwind.config.js        # Tailwind configuration
-├── next.config.js            # Next.js configuration
-└── package.json              # Dependencies
-🚀 Getting Started
-Prerequisites
-Node.js 18.x or higher
-
+### Prerequisites
+```bash
+Node.js >= 18.0.0
 npm or yarn
-
 Git
-
-Installation
-Clone the repository
-
-bash
-git clone https://github.com/gonagri/gonagri-frontend.git
+# 1. Clone the repository
+git clone https://github.com/your-org/gonagri-frontend.git
 cd gonagri-frontend
-Install dependencies
 
-bash
+# 2. Install dependencies
 npm install
-# or
-yarn install
-Set up environment variables
 
-bash
+# 3. Setup environment
 cp .env.example .env.local
-Edit .env.local with your configuration:
 
-env
-NEXT_PUBLIC_API_URL=http://localhost:5000/api
-NEXT_PUBLIC_SITE_URL=http://localhost:3000
-Run the development server
-
-bash
+# 4. Start development server
 npm run dev
-# or
-yarn dev
-Open your browser
-Navigate to http://localhost:3000
 
-📱 Development Workflow
-Current Phase: Coming Soon Launch
-Primary Branch: main (hosts coming-soon page)
+Visit http://localhost:3000 to see the app.
 
-Development Branch: develop (full app development)
-
-Feature Branches: feature/* for new features
-
-Branch Strategy
-text
-main            → Production (coming-soon page)
-└── develop     → Development (full app)
-    ├── feature/farmer-dashboard
-    ├── feature/buyer-marketplace
-    └── feature/auth-system
-Commit Convention
-feat: New feature
-
-fix: Bug fix
-
-docs: Documentation
-
-style: Code style/formatting
-
-refactor: Code refactoring
-
-test: Adding tests
-
-chore: Maintenance
-
-🧪 Testing
+Available Scripts
 bash
-# Run unit tests
-npm test
-
-# Run end-to-end tests
-npm run test:e2e
-
-# Run linting
-npm run lint
-
-# Type checking
-npm run type-check
-🚢 Deployment
-Vercel (Recommended)
-bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Deploy
-vercel --prod
-Manual Build
-bash
-# Build for production
-npm run build
-
-# Start production server
-npm start
-👥 Team Structure
-Core Team
-Founder & CEO: Product vision & strategy
-
-CTO: Technical architecture & backend
-
-Product Manager: Feature prioritization & user stories
-
-UI/UX Designer: User experience & interface design
-
-Frontend Developers: (2) Next.js implementation
-
-Backend Developers: (2) API & database
-
-System Architect: Infrastructure & scalability
-
-Contributors
-AI/Data Specialist: Machine learning models
-
-DevOps Engineer: Deployment & CI/CD
-
-QA Engineer: Testing & quality assurance
-
-📊 Project Status
-Component	Status	Timeline
-Coming Soon Page	✅ Live	Week 1
-Farmer Dashboard	🚧 In Development	Week 3-4
-Buyer Marketplace	🚧 In Development	Week 4-5
-Authentication	🚧 In Development	Week 2
-Payment Integration	📅 Planned	Week 6
-Admin Panel	📅 Planned	Week 7
-💰 Business Model
-Revenue Streams
-Transaction Fees: 5-15% commission on sales
-
-Delivery Fees: Percentage from logistics partners
-
-Premium Subscriptions: Advanced features for farmers
-
-Verification Fees: Fast-track verification service
-
-Data Insights: Market analytics for enterprises
-
-Pricing Tiers
-Farmers: Free basic account, ₦2,500/month for Pro features
-
-Buyers: No subscription, pay per transaction
-
-Logistics: 10-15% of delivery fee
-
-🔒 Security
-Authentication: JWT with refresh token rotation
-
-Payments: PCI DSS compliant through Flutterwave
-
-Data: Encryption at rest and in transit
-
-Compliance: GDPR, Nigeria Data Protection Regulation
-
-📄 License
-This project is proprietary and confidential. All rights reserved.
-
-© 2024 GONAGRI. Unauthorized copying, distribution, or use is prohibited.
-
-🤝 Contact
-Email: contact@gonaagri.com
-Website: https://gonagri.com
-Twitter: @GonagriApp
-
-🌟 Acknowledgments
-African farmers who inspired this platform
-
-Our dedicated development team
-
-Early supporters and beta testers
-
-Built with ❤️ for the future of African agriculture. 🚜🌍
-
-Last Updated: November 2024
-*Version: 1.0.0-beta*
+npm run dev          # Start development server
+npm run build        # Build for production
+npm start           # Start production server
+npm run lint        # Run ESLint
+npm run type-check  # TypeScript check
 
