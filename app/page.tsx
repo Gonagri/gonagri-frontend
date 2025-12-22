@@ -1,4 +1,4 @@
-import ComingSoon from "./comingsoon/comingsoon";
+import ComingSoon from "./comingsoon/page";
 
 const Home = () => {
   return (

@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 @layer base {
-  :root {
-    --primary: #2A7221; /* Forest Green */
-    --secondary: #8B4513; /* Earth Brown */
-    --accent: #FFD700; /* Sunrise Yellow */
-  }
+:root {
+  --primary: 42 114 33;   
+  --secondary: 139 69 19; 
+  --accent: 255 215 0;   
+}
 
   body {
     font-family: var(--font-inter), system-ui, sans-serif;
@@ -16,11 +16,54 @@
   }
 }
 
-/* Custom styles */
-.btn-primary {
-  @apply bg-[#2A7221] hover:bg-[#1f5c17] text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200;
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.btn-secondary {
-  @apply bg-[#FFD700] hover:bg-[#e6c200] text-gray-900 font-medium py-3 px-6 rounded-lg transition-colors duration-200;
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+    }
+
+@keyframes ping {
+    75%, 100% {
+        transform: scale(2);
+        opacity: 0;
+    }
 }

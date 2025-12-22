@@ -1,0 +1,102 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      spacing: {
+        125: "500px",
+      },
+      colors: {
+        primary: {
+          50: "#f0f7ef",
+          100: "#d9ecd6",
+          200: "#b6dab0",
+          300: "#8bc381",
+          400: "#60a956",
+          500: "#2A7221",
+          600: "#225c1a",
+          700: "#1b4715",
+          800: "#143710",
+          900: "#0d260b",
+        },
+        secondary: {
+          50: "#fdf8f3",
+          100: "#f9ead9",
+          200: "#f3d5b3",
+          300: "#e8b87d",
+          400: "#dc9a47",
+          500: "#C87D2F",
+          600: "#a16426",
+          700: "#7a4c1d",
+        },
+        accent: {
+          50: "#fffef0",
+          100: "#fffbd1",
+          200: "#fff7a3",
+          500: "#F4D03F",
+          600: "#c3a632",
+          700: "#927d26",
+        },
+        neutral: {
+          50: "#f9fafb",
+          100: "#f3f4f6",
+          200: "#e5e7eb",
+          300: "#d1d5db",
+          400: "#9ca3af",
+          500: "#6b7280",
+          600: "#4b5563",
+          700: "#374151",
+          800: "#1f2937",
+          900: "#111827",
+        },
+        success: {
+          50: "#ecfdf5",
+          500: "#10b981",
+          600: "#059669",
+          800: "#065f46",
+        },
+      },
+      keyframes: {
+        fadeIn: {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
+        fadeInUp: {
+          from: { opacity: "0", transform: "translateY(30px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
+        slideInLeft: {
+          from: { opacity: "0", transform: "translateX(-50px)" },
+          to: { opacity: "1", transform: "translateX(0)" },
+        },
+        slideInRight: {
+          from: { opacity: "0", transform: "translateX(50px)" },
+          to: { opacity: "1", transform: "translateX(0)" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-20px)" },
+        },
+        pingCustom: {
+          "75%, 100%": { transform: "scale(2)", opacity: "0" },
+        },
+      },
+      animation: {
+        fadeIn: "fadeIn 0.3s ease-out forwards",
+        fadeInUp: "fadeInUp 0.8s ease-out forwards",
+        slideInLeft: "slideInLeft 0.8s ease-out forwards",
+        slideInRight: "slideInRight 0.8s ease-out forwards",
+        float: "float 3s ease-in-out infinite",
+        pingCustom: "pingCustom 1s ease-out forwards",
+      },
+    },
+  },
+  plugins: [],
+};
+
+export default config;
