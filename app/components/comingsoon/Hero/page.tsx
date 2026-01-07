@@ -103,7 +103,10 @@ const Hero = () => {
             </div>
 
             {/* Hero Image */}
-            <div className="animate-slideInRight relative">
+            <div
+              className="relative"
+              style={{ animation: "slideInRight 0.8s ease-out" }}
+            >
               <div className="relative rounded-2xl overflow-hidden h-125">
                 <div className="absolute -inset-4 bg-linear-to-br from-[#2A7221] to-[#F4D03F] opacity-20 blur-2xl rounded-2xl"></div>
                 <Image

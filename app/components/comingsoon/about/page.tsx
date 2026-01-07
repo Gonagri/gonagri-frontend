@@ -2,6 +2,9 @@ import React from "react";
 import Image from "next/image";
 import img1 from "@/public/images/abtImg1.jpeg";
 import img2 from "@/public/images/abtImg2.jpeg";
+//Icons
+import { Shield, ChartCandlestick, Zap, Globe } from "lucide-react";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -47,9 +50,83 @@ const About = () => {
             modern economy.
           </p>
         </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
+          <div className="flex gap-3">
+            <div className="w-10 h-10 bg-[#d9ecd6] rounded-lg flex items-center justify-center text-[#225c1a] shrink-0">
+              <Shield size={24} />
+            </div>
+            <div>
+              <h5>Verified Profiles</h5>
+              <p
+                style={{
+                  fontSize: "0.875rem",
+                  color: "#4b5563",
+                }}
+              >
+                All users are verified to ensure trust and security
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-3">
+            <div className="w-10 h-10 bg-[#d9ecd6] rounded-lg flex items-center justify-center text-[#225c1a] shrink-0">
+              <ChartCandlestick size={24} />
+            </div>
+            <div>
+              <h5>Real-Time Pricing</h5>
+              <p
+                style={{
+                  fontSize: "0.875rem",
+                  color: "#4b5563",
+                }}
+              >
+                Live market prices and transparent transactions
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-3">
+            <div className="w-10 h-10 bg-[#d9ecd6] rounded-lg flex items-center justify-center text-[#225c1a] shrink-0">
+              <Zap size={24} />
+            </div>
+            <div>
+              <h5>Instant Connections</h5>
+              <p
+                style={{
+                  fontSize: "0.875rem",
+                  color: "#4b5563",
+                }}
+              >
+                Connect with partners in seconds, not days
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-3">
+            <div className="w-10 h-10 bg-[#d9ecd6] rounded-lg flex items-center justify-center text-[#225c1a] shrink-0">
+              <Globe size={24} />
+            </div>
+            <div>
+              <h5>Global Reach</h5>
+              <p
+                style={{
+                  fontSize: "0.875rem",
+                  color: "#4b5563",
+                }}
+              >
+                Access markets across Africa and beyond
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <Link
+            href="#connections"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg bg-[#2A7221] hover:bg-[#225c1a] text-white rounded-lg font-semibold shadow-md hover:shadow-lg transition-all duration-200"
+          >
+            Explore Connections →
+          </Link>
+        </div>
       </div>
     </div>
   );
 };
-
 export default About;

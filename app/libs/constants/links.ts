@@ -24,13 +24,13 @@ export const nav_links: NavLink[] = [
   },
   {
     name: "Contact",
-    href: "/comingsoon/contact",
+    href: "#contact",
     isActive: true,
     isComingSoon: true,
   },
   {
     name: "Get Started",
-    href: "/comingsoon/get-started",
+    href: "#getstarted",
     isActive: true,
     isComingSoon: true,
   },
