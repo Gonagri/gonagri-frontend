@@ -47,7 +47,7 @@ const ComingSoonHeader = () => {
         {/* Desktop CTA */}
         <div className="hidden md:flex bg-[#2A7221] text-white shadow-md rounded-lg hover:bg-[#225c1a] transition-colors duration-200">
           <Link
-            href={nav_links[4].href}
+            href={nav_links[3].href}
             className="inline-flex items-center justify-center gap-4 px-6 py-3 font-semibold no-underline"
           >
             {nav_links[4].name}
