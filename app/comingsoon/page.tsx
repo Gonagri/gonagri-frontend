@@ -71,7 +71,7 @@ const ComingSoon = () => {
               </p>
             </div>
             <div className="steps-grid relative">
-              <div className="grid grid-cols-4 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div className="h-full border-t-4 border-t-[#2a7221] bg-white cursor-pointer rounded-2xl p-8 shadow-[0_4px_6px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_25px_rgba(0,0,0,0.1)] hover:-translate-y-1 transform transition-all duration-300">
                   <div className="text-[4rem] text-transparent bg-[linear-gradient(135deg,#225c1a,#c3a632)] bg-clip-text opacity-[0.2] mb-4">
                     01
