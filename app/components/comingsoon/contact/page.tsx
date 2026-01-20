@@ -1,14 +1,13 @@
 "use client";
-import React from "react";
-import { useState } from "react";
+import React, { useState, ChangeEvent, FormEvent } from "react";
 import Image from "next/image";
 
-// images
 import img from "@/public/images/contactImg.jpeg";
 
-//Icons
 import { Mail, Phone, MapPin, CircleCheckBig } from "lucide-react";
 import Link from "next/link";
+import { useSubmitContactMessage } from "../../../libs/api/contact";
+import { getApiErrorMessage } from "../../../libs/api/error";
 
 const Contact = () => {
   const [showSuccess, setShowSuccess] = useState(false);
@@ -18,29 +17,47 @@ const Contact = () => {
     message: "",
   });
 
-  const handleChange = (e: { target: { name: string; value: string } }) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+  const [error, setError] = useState<string | null>(null);
+
+  const submitContactMutation = useSubmitContactMessage();
+
+  const handleChange = (
+    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    const { name, value } = event.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   };
 
-  const handleSubmit = (e: { preventDefault: () => void }) => {
-    e.preventDefault();
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
 
     const { name, email, message } = formData;
 
-    if (name && email && message) {
+    if (!name || !email || !message) {
+      return;
+    }
+
+    setError(null);
+
+    try {
+      await submitContactMutation.mutateAsync({ name, email, message });
+
       setShowSuccess(true);
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
 
       setTimeout(() => {
         setShowSuccess(false);
-        setFormData({
-          name: "",
-          email: "",
-          message: "",
-        });
       }, 5000);
+    } catch (mutationError) {
+      const messageText = getApiErrorMessage(mutationError);
+      setError(messageText);
     }
   };
 
@@ -156,11 +173,16 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="inline-flex items-center justify-center gap-2 w-full px-8 py-4 text-lg font-semibold rounded-lg bg-[#2A7221] text-white transition-all duration-300 hover:bg-[#225c1a] cursor-pointer"
+                  disabled={submitContactMutation.isPending}
+                  className="inline-flex items-center justify-center gap-2 w-full px-8 py-4 text-lg font-semibold rounded-lg bg-[#2A7221] text-white transition-all duration-300 hover:bg-[#225c1a] cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed"
                 >
-                  Send Message <span>→</span>
+                  {submitContactMutation.isPending
+                    ? "Sending..."
+                    : "Send Message"}{" "}
+                  <span>→</span>
                 </button>
               </form>
+              {error && <p className="mt-4 text-sm text-red-600">{error}</p>}
             </div>
           )}
 
