@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description:
     "Direct B2B marketplace for African farmers and commercial buyers",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/icon.png",
   },
 };
 
