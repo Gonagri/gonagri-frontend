@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Digital &amp; Creative Services | Green Exchange Tech Labs</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#10b77f",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#10221c",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Spline Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-300">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full border-b border-solid border-[#283933] bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-4 md:px-10 lg:px-40 py-3">
+<div class="flex items-center justify-between whitespace-nowrap">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-6">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] font-display">Green Exchange Tech Labs</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8 items-center">
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-slate-700 dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-slate-700 dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-slate-700 dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Process</a>
+<a class="text-slate-700 dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Pricing</a>
+</nav>
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary text-background-dark text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">Start a Project</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex flex-col items-center">
+<!-- Hero Section -->
+<section class="w-full max-w-[1280px] px-4 md:px-10 lg:px-40 py-10">
+<div class="grid grid-cols-1 @[864px]:grid-cols-2 gap-8 items-center">
+<div class="flex flex-col gap-6">
+<div class="flex flex-col gap-4">
+<span class="text-primary font-bold tracking-widest uppercase text-xs">Creative Division</span>
+<h1 class="text-slate-900 dark:text-white text-4xl md:text-6xl font-black leading-[1.1] tracking-[-0.033em] font-display">
+                            Crafting Digital Excellence
+                        </h1>
+<p class="text-slate-600 dark:text-[#9db9b0] text-lg font-normal leading-relaxed">
+                            Elevate your brand with cutting-edge graphic design and high-impact video production from our creative labs. We bridge the gap between technical complexity and visual storytelling.
+                        </p>
+</div>
+<div class="flex gap-4">
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-xl h-12 px-6 bg-primary text-background-dark text-base font-bold tracking-[0.015em] hover:scale-105 transition-transform">
+                            View Portfolio
+                        </button>
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-xl h-12 px-6 border border-primary text-primary text-base font-bold tracking-[0.015em] hover:bg-primary/10 transition-colors">
+                            Contact Us
+                        </button>
+</div>
+</div>
+<div class="relative grid grid-cols-2 gap-3 h-[450px]">
+<div class="bg-cover bg-center rounded-xl shadow-2xl h-full" data-alt="Modern smartphone app interface design display" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDyV_058eTnUaQYtGHpmlsQApfoD0HUjP9sH8cCMxqwVmNVO0umalSbNCUvkgvthqRYi4JvTKuDLMfLnibLlamqCmhu_Bja8r1sWXerP8pAcH9U7OKlHwKDe5AlKdPTnN73ohoi823sdfvoz4iHZkPHfgkkT-1t3sFRQnru-7Re5i0Njt1ZdlxWhs7rYpQgys57xu-akGiF_Lbta_MTckHhjnNqYQsmcOZHKoaxOGYj_JXmp3asb1XnDqHetkRqdAD185z_4MI7Al-Q");'></div>
+<div class="grid grid-rows-2 gap-3 h-full">
+<div class="bg-cover bg-center rounded-xl shadow-2xl" data-alt="Abstract colorful 3D motion graphic shape" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjMHndVGfBMNJZvVUVwydau1RzK3ckzob2rM_sf20tAu-XcgMDtF3SrI4CEa8_4fU4ubXuuTZKH1LBZ3FdGbHDfncPK4VNa7kZYmeZE5UToGAI2H7LGosZuWX9Ho55P1v-4CCHwolSA14PTpMt36Rlvv2hbGDu5tI3GU0MF-K_3UB4bHlbjdaWiic8lPEh9CBRPmu1ctjYvPAzxQ4ToiRO6NvA0XzCcXhy3TPzS3TW96-CVvvuG5Q2ffo2Xn5zvcQe6dmV7rgDqquA");'></div>
+<div class="bg-cover bg-center rounded-xl shadow-2xl" data-alt="Professional video editing software interface" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC777ScOR-8268Gyo5fQ9rS4Vh9F0Eheix1iwtAxeYcPmp3kXDS_kXmyP7lbv9KLYVKt8BtQVhPz4N8iSbkMZXJ3aiU5UvGzBbzuXgMw9ayS-MYRLvSr8uzwhS9-V3jhPHQ1pSxlmGO4q02O5BAPVZXiSG25djhvSxExZwJox9FYC_LTpHyHLXAugx-c8R0ebn-ux74mYBA8ADwP-quyB86yvpb0MNYv3UDfXGWpW5OY-15FcgqGMXqS55165s5EGnIaib9B5160pJB");'></div>
+</div>
+<div class="absolute -bottom-4 -left-4 bg-primary p-6 rounded-xl hidden lg:block">
+<p class="text-background-dark font-black text-2xl">500+</p>
+<p class="text-background-dark/80 text-xs font-bold uppercase tracking-tighter">Projects Delivered</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Graphic Design Services -->
+<section class="w-full max-w-[1280px] px-4 md:px-10 lg:px-40 py-12">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">palette</span>
+<h2 class="text-slate-900 dark:text-white text-[28px] font-bold leading-tight tracking-[-0.015em] font-display">Graphic Design Services</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-[#3b544b] bg-white dark:bg-[#1c2723] p-6 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl">fingerprint</span>
+<div class="flex flex-col gap-2">
+<h3 class="text-slate-900 dark:text-white text-xl font-bold leading-tight">Branding &amp; Identity</h3>
+<p class="text-slate-600 dark:text-[#9db9b0] text-sm leading-relaxed">We build strategic visual identities that resonate with your target audience and stand the test of time.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-[#3b544b] bg-white dark:bg-[#1c2723] p-6 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl">web_asset</span>
+<div class="flex flex-col gap-2">
+<h3 class="text-slate-900 dark:text-white text-xl font-bold leading-tight">UI/UX Design</h3>
+<p class="text-slate-600 dark:text-[#9db9b0] text-sm leading-relaxed">Creating user-centric interfaces for web and mobile platforms that prioritize conversion and ease of use.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-[#3b544b] bg-white dark:bg-[#1c2723] p-6 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl">hub</span>
+<div class="flex flex-col gap-2">
+<h3 class="text-slate-900 dark:text-white text-xl font-bold leading-tight">Social Media Kits</h3>
+<p class="text-slate-600 dark:text-[#9db9b0] text-sm leading-relaxed">High-engagement assets designed specifically for your social presence across LinkedIn, Instagram, and more.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Video Editing Section -->
+<section class="w-full max-w-[1280px] px-4 md:px-10 lg:px-40 py-12">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">movie</span>
+<h2 class="text-slate-900 dark:text-white text-[28px] font-bold leading-tight tracking-[-0.015em] font-display">Video Editing &amp; Motion</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-[#3b544b] bg-white dark:bg-[#1c2723] p-6 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl">video_camera_front</span>
+<div class="flex flex-col gap-2">
+<h3 class="text-slate-900 dark:text-white text-xl font-bold leading-tight">Corporate Storytelling</h3>
+<p class="text-slate-600 dark:text-[#9db9b0] text-sm leading-relaxed">Dynamic corporate films that translate your mission and values into a compelling visual narrative.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-[#3b544b] bg-white dark:bg-[#1c2723] p-6 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl">animation</span>
+<div class="flex flex-col gap-2">
+<h3 class="text-slate-900 dark:text-white text-xl font-bold leading-tight">Motion Graphics</h3>
+<p class="text-slate-600 dark:text-[#9db9b0] text-sm leading-relaxed">2D and 3D animations that simplify complex tech concepts and keep viewers hooked.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-[#3b544b] bg-white dark:bg-[#1c2723] p-6 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl">auto_fix_high</span>
+<div class="flex flex-col gap-2">
+<h3 class="text-slate-900 dark:text-white text-xl font-bold leading-tight">Post-Production</h3>
+<p class="text-slate-600 dark:text-[#9db9b0] text-sm leading-relaxed">Professional color grading, sound design, and visual effects to give your raw footage a cinematic edge.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Creative Process Section -->
+<section class="w-full bg-slate-100 dark:bg-black/20 py-20 mt-12">
+<div class="max-w-[1280px] mx-auto px-4 md:px-10 lg:px-40">
+<div class="text-center mb-16">
+<h2 class="text-slate-900 dark:text-white text-3xl md:text-4xl font-black font-display mb-4">Our Creative Process</h2>
+<p class="text-slate-600 dark:text-[#9db9b0] max-w-2xl mx-auto">From the first spark of an idea to the final pixel-perfect render, we follow a rigorous workflow to ensure excellence.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="relative flex flex-col items-center text-center group">
+<div class="size-16 rounded-full bg-primary/20 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-background-dark text-3xl">lightbulb</span>
+</div>
+<h4 class="text-slate-900 dark:text-white font-bold mb-2">1. Concept</h4>
+<p class="text-slate-500 dark:text-[#9db9b0] text-sm">Briefing and strategic brainstorming sessions.</p>
+<div class="hidden md:block absolute top-8 left-[65%] w-full h-[2px] bg-slate-300 dark:bg-[#3b544b]"></div>
+</div>
+<div class="relative flex flex-col items-center text-center group">
+<div class="size-16 rounded-full bg-primary/20 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-background-dark text-3xl">edit_note</span>
+</div>
+<h4 class="text-slate-900 dark:text-white font-bold mb-2">2. Design/Edit</h4>
+<p class="text-slate-500 dark:text-[#9db9b0] text-sm">Active production with weekly progress updates.</p>
+<div class="hidden md:block absolute top-8 left-[65%] w-full h-[2px] bg-slate-300 dark:bg-[#3b544b]"></div>
+</div>
+<div class="relative flex flex-col items-center text-center group">
+<div class="size-16 rounded-full bg-primary/20 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-background-dark text-3xl">rate_review</span>
+</div>
+<h4 class="text-slate-900 dark:text-white font-bold mb-2">3. Review</h4>
+<p class="text-slate-500 dark:text-[#9db9b0] text-sm">Collaborative feedback rounds and refinements.</p>
+<div class="hidden md:block absolute top-8 left-[65%] w-full h-[2px] bg-slate-300 dark:bg-[#3b544b]"></div>
+</div>
+<div class="flex flex-col items-center text-center group">
+<div class="size-16 rounded-full bg-primary/20 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-background-dark text-3xl">check_circle</span>
+</div>
+<h4 class="text-slate-900 dark:text-white font-bold mb-2">4. Final Render</h4>
+<p class="text-slate-500 dark:text-[#9db9b0] text-sm">Delivery of high-quality assets in all required formats.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="w-full max-w-[1280px] px-4 md:px-10 lg:px-40 py-20">
+<div class="text-center mb-16">
+<h2 class="text-slate-900 dark:text-white text-3xl md:text-4xl font-black font-display mb-4">Creative Packages</h2>
+<p class="text-slate-600 dark:text-[#9db9b0]">Retainer or project-based models tailored for tech companies.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Essential Card -->
+<div class="flex flex-col p-8 rounded-2xl border border-slate-200 dark:border-[#3b544b] bg-white dark:bg-[#1c2723]">
+<h3 class="text-xl font-bold mb-2">Essential</h3>
+<p class="text-slate-500 dark:text-[#9db9b0] text-sm mb-6">Quick-turnaround assets for social and web.</p>
+<div class="mb-8">
+<span class="text-4xl font-black text-primary">$999</span>
+<span class="text-slate-500">/mo</span>
+</div>
+<ul class="flex flex-col gap-4 mb-8">
+<li class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check</span>
+<span>5 Social Media Graphics</span>
+</li>
+<li class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check</span>
+<span>1 Short-form Video (30s)</span>
+</li>
+<li class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check</span>
+<span>48h Response Time</span>
+</li>
+</ul>
+<button class="mt-auto w-full py-3 rounded-xl border border-primary text-primary font-bold hover:bg-primary hover:text-background-dark transition-all">Get Started</button>
+</div>
+<!-- Standard Card (Highlighted) -->
+<div class="flex flex-col p-8 rounded-2xl border-2 border-primary bg-white dark:bg-[#1c2723] scale-105 shadow-2xl relative">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-background-dark px-4 py-1 rounded-full text-xs font-bold uppercase">Most Popular</div>
+<h3 class="text-xl font-bold mb-2">Standard</h3>
+<p class="text-slate-500 dark:text-[#9db9b0] text-sm mb-6">Full branding or monthly content engine.</p>
+<div class="mb-8">
+<span class="text-4xl font-black text-primary">$2,499</span>
+<span class="text-slate-500">/mo</span>
+</div>
+<ul class="flex flex-col gap-4 mb-8">
+<li class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check</span>
+<span>15 Creative Assets</span>
+</li>
+<li class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check</span>
+<span>2 Explainer Videos (60s)</span>
+</li>
+<li class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check</span>
+<span>Dedicated Designer</span>
+</li>
+<li class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check</span>
+<span>24h Response Time</span>
+</li>
+</ul>
+<button class="mt-auto w-full py-3 rounded-xl bg-primary text-background-dark font-bold hover:opacity-90 transition-opacity">Select Plan</button>
+</div>
+<!-- Premium Card -->
+<div class="flex flex-col p-8 rounded-2xl border border-slate-200 dark:border-[#3b544b] bg-white dark:bg-[#1c2723]">
+<h3 class="text-xl font-bold mb-2">Premium</h3>
+<p class="text-slate-500 dark:text-[#9db9b0] text-sm mb-6">Full-scale production and design systems.</p>
+<div class="mb-8 text-slate-900 dark:text-white font-bold">Custom Project</div>
+<p class="text-sm text-slate-500 mb-8">Best for large-scale product launches and enterprise branding.</p>
+<ul class="flex flex-col gap-4 mb-8">
+<li class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check</span>
+<span>Unlimited Revisions</span>
+</li>
+<li class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check</span>
+<span>4K Cinema Production</span>
+</li>
+<li class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check</span>
+<span>Full Brand Guidelines</span>
+</li>
+</ul>
+<button class="mt-auto w-full py-3 rounded-xl border border-slate-300 dark:border-[#3b544b] text-slate-900 dark:text-white font-bold hover:bg-slate-100 dark:hover:bg-white/5 transition-all">Talk to Sales</button>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="w-full max-w-[1280px] px-4 md:px-10 lg:px-40 pb-20">
+<div class="bg-primary rounded-3xl p-10 md:p-16 flex flex-col items-center text-center gap-8 relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, black 1px, transparent 0); background-size: 24px 24px;"></div>
+<h2 class="text-background-dark text-3xl md:text-5xl font-black font-display max-w-3xl leading-tight">Ready to bring your digital vision to life?</h2>
+<p class="text-background-dark/80 text-lg max-w-2xl font-medium">Join 50+ tech companies that trust Green Exchange for their high-impact creative needs.</p>
+<div class="flex flex-col sm:flex-row gap-4 z-10">
+<button class="px-8 py-4 bg-background-dark text-white rounded-xl font-bold hover:scale-105 transition-transform">Schedule a Consultation</button>
+<button class="px-8 py-4 border-2 border-background-dark text-background-dark rounded-xl font-bold hover:bg-background-dark/10 transition-colors">Browse Portfolio</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#283933] bg-background-dark py-12 px-4 md:px-10 lg:px-40">
+<div class="flex flex-col md:flex-row justify-between items-start gap-10">
+<div class="flex flex-col gap-4 max-w-xs">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined">rocket_launch</span>
+<span class="font-bold text-white text-lg font-display">Green Exchange Labs</span>
+</div>
+<p class="text-[#9db9b0] text-sm">The innovation hub for visual storytelling and digital product excellence.</p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-12">
+<div class="flex flex-col gap-4">
+<h5 class="text-white font-bold uppercase text-xs tracking-widest">Services</h5>
+<a class="text-[#9db9b0] text-sm hover:text-primary transition-colors" href="#">Graphic Design</a>
+<a class="text-[#9db9b0] text-sm hover:text-primary transition-colors" href="#">Video Editing</a>
+<a class="text-[#9db9b0] text-sm hover:text-primary transition-colors" href="#">Web Development</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-white font-bold uppercase text-xs tracking-widest">Company</h5>
+<a class="text-[#9db9b0] text-sm hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-[#9db9b0] text-sm hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-[#9db9b0] text-sm hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-white font-bold uppercase text-xs tracking-widest">Legal</h5>
+<a class="text-[#9db9b0] text-sm hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="text-[#9db9b0] text-sm hover:text-primary transition-colors" href="#">Terms</a>
+</div>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-[#283933] text-center text-[#9db9b0] text-xs">
+            © 2024 Green Exchange Tech Labs. All rights reserved.
+        </div>
+</footer>
+</body></html>

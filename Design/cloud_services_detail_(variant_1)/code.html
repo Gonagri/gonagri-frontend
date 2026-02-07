@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cloud Services Detail | Green Exchange Tech Labs</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Space Grotesk -->
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#10b77f",
+              "background-light": "#f6f8f7",
+              "background-dark": "#10221c",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: "Space Grotesk", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#111816] dark:text-white transition-colors duration-300">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full border-b border-solid border-[#f0f4f3] dark:border-[#1a332a] bg-white/80 dark:bg-background-dark/80 backdrop-blur-md px-6 md:px-20 lg:px-40 py-3">
+<div class="flex items-center justify-between whitespace-nowrap max-w-[1200px] mx-auto">
+<div class="flex items-center gap-3 text-[#111816] dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] font-display">Green Exchange Tech Labs</h2>
+</div>
+<div class="flex flex-1 justify-end items-center gap-8">
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Partners</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Pricing</a>
+</nav>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span>Get Started</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border border-[#f0f4f3] dark:border-[#1a332a]" data-alt="User avatar profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAft-JLtw6Od8jymAQVsB2tuWk63Bof-UJEwbZLR37BLqFPwN734LIiZEP-wZabf_IgjE-oCfyWD-mjJIizrHBybDkDWj8_xMN2xXahGDr8P9jXnqdShTAl4Gdycwq7C250SM6ElOQvI3TX-3D4u1m-Vqjmk7XXzqCndniy5aYzJZG44GnWK6DUOuoHX45UUR9mw4UIq_FkkdwvgEhobSjDjZOHNgxHCfzvZPHDpU5r2X0ZMKzfW63RG8oyeSIADbX0JmxOU68bL5ku");'></div>
+</div>
+</div>
+</header>
+<main class="flex-1 w-full max-w-[1200px] mx-auto px-6 py-8">
+<!-- Hero Section -->
+<section class="@container mb-12">
+<div class="@[480px]:p-0">
+<div class="flex min-h-[520px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 rounded-xl items-start justify-center px-8 pb-10 @[480px]:px-16" data-alt="Futuristic high-tech cloud network visualization background" style='background-image: linear-gradient(to right, rgba(16, 34, 28, 0.95) 0%, rgba(16, 34, 28, 0.6) 50%, rgba(16, 183, 127, 0.2) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuA55WNTsJWWJ0rt5iExRHwSyYhrU8p3cpLn5wnJjUKPLUn2jHnLSReR1_Yoa8TRqH-fvR6f9H6RPs53we4hUftdIvEm0h77M79bA7w6X9ke4nLJ_i9-GYC1yJkUHb0cU1s6BWFM3mCYGIw7nfeo2NT37pdktXEOMrlyFvxyeEujTNHeWNYWiuFxoKrwxK0sWNHBGS0J7g68QBqmdBrBfZ_kutaXEz8MOpI49eJuaKi_OfSzMjAbQpjgNrwnqfVNVgALJKG2OATJ04Oj");'>
+<div class="flex flex-col gap-4 text-left max-w-[640px]">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl font-display">
+                            Scalable Cloud Infrastructure for Modern Enterprises
+                        </h1>
+<p class="text-white/80 text-lg font-normal leading-relaxed @[480px]:text-xl">
+                            High-performance, professional B2B cloud solutions with zero-downtime migration and 24/7 managed support for growing tech ecosystems.
+                        </p>
+</div>
+<div class="flex flex-wrap gap-4 mt-4">
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:scale-[1.02] transition-transform">
+<span class="truncate">Schedule a Demo</span>
+</button>
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-white/10 text-white border border-white/20 text-base font-bold leading-normal tracking-[0.015em] backdrop-blur-sm hover:bg-white/20 transition-all">
+<span class="truncate">View Case Studies</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Offerings Section -->
+<section class="mb-16">
+<div class="flex flex-col gap-2 px-4 pb-8">
+<h2 class="text-[#111816] dark:text-white text-3xl font-bold leading-tight tracking-[-0.015em] font-display">Key Offerings</h2>
+<div class="h-1 w-16 bg-primary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
+<!-- Migration -->
+<div class="flex flex-col gap-4 p-6 bg-white dark:bg-[#1a332a] rounded-xl border border-[#f0f4f3] dark:border-[#2a4d40] shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-4xl">cloud_sync</span>
+</div>
+<div>
+<h3 class="text-[#111816] dark:text-white text-xl font-bold leading-normal font-display">Cloud Migration</h3>
+<p class="text-[#61897c] dark:text-white/60 text-base font-normal mt-2 leading-relaxed">
+                            Seamless lift-and-shift or refactoring strategies with a zero-downtime focus for critical business applications.
+                        </p>
+</div>
+<ul class="space-y-2 mt-4">
+<li class="flex items-center gap-2 text-sm text-[#111816] dark:text-white/80">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                            Risk Assessment
+                        </li>
+<li class="flex items-center gap-2 text-sm text-[#111816] dark:text-white/80">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                            Automated CI/CD
+                        </li>
+</ul>
+</div>
+<!-- Architecture -->
+<div class="flex flex-col gap-4 p-6 bg-white dark:bg-[#1a332a] rounded-xl border border-[#f0f4f3] dark:border-[#2a4d40] shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-4xl">architecture</span>
+</div>
+<div>
+<h3 class="text-[#111816] dark:text-white text-xl font-bold leading-normal font-display">Cloud Architecture</h3>
+<p class="text-[#61897c] dark:text-white/60 text-base font-normal mt-2 leading-relaxed">
+                            Scalability focus for growing enterprises. Custom multi-region setups optimized for cost and performance.
+                        </p>
+</div>
+<ul class="space-y-2 mt-4">
+<li class="flex items-center gap-2 text-sm text-[#111816] dark:text-white/80">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                            Multi-Cloud Strategy
+                        </li>
+<li class="flex items-center gap-2 text-sm text-[#111816] dark:text-white/80">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                            Auto-scaling Groups
+                        </li>
+</ul>
+</div>
+<!-- Managed Services -->
+<div class="flex flex-col gap-4 p-6 bg-white dark:bg-[#1a332a] rounded-xl border border-[#f0f4f3] dark:border-[#2a4d40] shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-4xl">support_agent</span>
+</div>
+<div>
+<h3 class="text-[#111816] dark:text-white text-xl font-bold leading-normal font-display">Managed Services</h3>
+<p class="text-[#61897c] dark:text-white/60 text-base font-normal mt-2 leading-relaxed">
+                            24/7 expert support and system monitoring. Proactive patching and security auditing at every level.
+                        </p>
+</div>
+<ul class="space-y-2 mt-4">
+<li class="flex items-center gap-2 text-sm text-[#111816] dark:text-white/80">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                            Real-time Monitoring
+                        </li>
+<li class="flex items-center gap-2 text-sm text-[#111816] dark:text-white/80">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                            Security Hardening
+                        </li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Cloud Partners Section -->
+<section class="mb-16 bg-white dark:bg-[#10221c] rounded-2xl p-10 border border-[#f0f4f3] dark:border-[#1a332a]">
+<div class="text-center mb-10">
+<h2 class="text-[#111816] dark:text-white text-2xl font-bold font-display mb-2">Cloud Partners</h2>
+<p class="text-[#61897c] dark:text-white/60">Powering your growth with industry leaders</p>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-12 md:gap-24 opacity-70 hover:opacity-100 transition-opacity">
+<!-- AWS -->
+<div class="flex flex-col items-center gap-2 grayscale hover:grayscale-0 transition-all cursor-pointer">
+<div class="h-12 w-24 bg-contain bg-center bg-no-repeat" data-alt="Amazon Web Services Logo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuASU3j1rv-mughxMIZIlEElGZRNBawdRgBiIB5thE6hCd0yCTlW2H1sKL2-4wHPPeIbSz1zVTmLRNKoN9uEB8wZBXz3TVR1vCPNh3N9-BenByJ9_jHfILe2g9ocPC40T7kiOZy8snbw1ZDTjnScvg1SzPJXXeutl6aHZNIM1Kfk_sDkwr_Qq_JT89JW5H5zchIsTv3YDmGMDVLXX6gVUErz3xqKNt13bsBYsgVg-31i1caQ-VRbNetbnFlItK8zw4MVufglnK4xTf4X");'></div>
+<span class="text-xs font-bold tracking-widest uppercase opacity-40">AWS certified</span>
+</div>
+<!-- GCP -->
+<div class="flex flex-col items-center gap-2 grayscale hover:grayscale-0 transition-all cursor-pointer">
+<div class="h-12 w-24 bg-contain bg-center bg-no-repeat" data-alt="Google Cloud Platform Logo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAScP0PVOr8CpFTogXzsuo7sLW2WNSl8Yjxnss0_YlXq9erkadUrMljyJpWsdJmJq3-FP4NmvTOnGtL0d1ND_TKWaKPrAbYSc8476DLSlnWlTjL4zRMkv2vA7xyOodXndHA6tQUW4zaTEHvOVbGjLJtpwmFUqYmAlP5r9ULuteP9wCONsi_KLOrK2nQMpAsFwSZCOqiHfqL_XtpoqYqzcitZMqd7BpPGYBqALRxSvl9tzy6D8KyoqmQnEnwOOYsPIDIziMI-j3Pmx87");'></div>
+<span class="text-xs font-bold tracking-widest uppercase opacity-40">Partner tier</span>
+</div>
+<!-- Azure -->
+<div class="flex flex-col items-center gap-2 grayscale hover:grayscale-0 transition-all cursor-pointer">
+<div class="h-12 w-24 bg-contain bg-center bg-no-repeat" data-alt="Microsoft Azure Logo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBrjWVOfmI9j1bGLmQ-6qrSy-9R-mOvOZZOVmIELpZoUnFzPDmfLBKWHpiHmAW7NQIZS5jIMumibg5QO9Ei_3LYjejnjcb7-FzVNeWqbPWPec0J-bUsf1F-vQPCGU4rbbkLD79NRXGjw8itWfkigrRJrvSBsr8aFPV6D1aUpHJyyl-6ZdT7NtchNIM3y1Iq8jvSOWTAVmCaPuH1yQ0VucdgsKysh65hUfYBmKuVgoCthfSdavY6tRpydRfRtgszzEGuTwH4QYI2eRXy");'></div>
+<span class="text-xs font-bold tracking-widest uppercase opacity-40">Expert provider</span>
+</div>
+</div>
+</section>
+<!-- Pricing Table Section -->
+<section class="mb-20">
+<div class="text-center mb-12">
+<h2 class="text-[#111816] dark:text-white text-3xl font-bold font-display mb-4">Flexible Service Plans</h2>
+<p class="text-[#61897c] dark:text-white/60">Select the tier that matches your enterprise requirements</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-0 bg-white dark:bg-[#1a332a] rounded-2xl overflow-hidden border border-[#f0f4f3] dark:border-[#2a4d40] shadow-xl">
+<!-- Essential -->
+<div class="p-8 border-b md:border-b-0 md:border-r border-[#f0f4f3] dark:border-[#2a4d40] flex flex-col">
+<div class="mb-8">
+<span class="text-primary font-bold text-xs tracking-widest uppercase">Essential</span>
+<div class="flex items-baseline gap-1 mt-2">
+<span class="text-4xl font-black text-[#111816] dark:text-white">$1,499</span>
+<span class="text-[#61897c] text-sm">/mo</span>
+</div>
+<p class="text-sm text-[#61897c] mt-4">Perfect for growing startups needing core infrastructure help.</p>
+</div>
+<div class="flex-1">
+<ul class="space-y-4 mb-8">
+<li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-primary">done</span> 8/5 Professional Support</li>
+<li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-primary">done</span> Basic Cloud Auditing</li>
+<li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-primary">done</span> Single-Region Support</li>
+<li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-primary">done</span> Monthly Performance Reports</li>
+</ul>
+</div>
+<button class="w-full py-3 border border-primary text-primary font-bold rounded-lg hover:bg-primary/5 transition-colors">Start Free Trial</button>
+</div>
+<!-- Professional (Highlighted) -->
+<div class="p-8 bg-[#fdfdfd] dark:bg-[#162d25] relative flex flex-col scale-105 shadow-2xl z-10 border-x border-[#f0f4f3] dark:border-[#2a4d40]">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-primary"></div>
+<div class="absolute top-4 right-8 bg-primary text-white text-[10px] px-2 py-1 rounded font-bold uppercase tracking-tighter">Most Popular</div>
+<div class="mb-8">
+<span class="text-primary font-bold text-xs tracking-widest uppercase">Professional</span>
+<div class="flex items-baseline gap-1 mt-2">
+<span class="text-4xl font-black text-[#111816] dark:text-white">$3,999</span>
+<span class="text-[#61897c] text-sm">/mo</span>
+</div>
+<p class="text-sm text-[#61897c] mt-4">Comprehensive management for scaling digital products.</p>
+</div>
+<div class="flex-1">
+<ul class="space-y-4 mb-8">
+<li class="flex items-center gap-3 text-sm font-semibold"><span class="material-symbols-outlined text-primary">done</span> 24/7 Managed Support</li>
+<li class="flex items-center gap-3 text-sm font-semibold"><span class="material-symbols-outlined text-primary">done</span> Multi-Region Redundancy</li>
+<li class="flex items-center gap-3 text-sm font-semibold"><span class="material-symbols-outlined text-primary">done</span> Advanced Security Compliance</li>
+<li class="flex items-center gap-3 text-sm font-semibold"><span class="material-symbols-outlined text-primary">done</span> Infrastructure as Code (IaC)</li>
+<li class="flex items-center gap-3 text-sm font-semibold"><span class="material-symbols-outlined text-primary">done</span> Cost Optimization Tools</li>
+</ul>
+</div>
+<button class="w-full py-3 bg-primary text-white font-bold rounded-lg shadow-lg shadow-primary/20 hover:opacity-90 transition-opacity">Contact Sales</button>
+</div>
+<!-- Enterprise -->
+<div class="p-8 border-t md:border-t-0 md:border-l border-[#f0f4f3] dark:border-[#2a4d40] flex flex-col">
+<div class="mb-8">
+<span class="text-primary font-bold text-xs tracking-widest uppercase">Enterprise</span>
+<div class="flex items-baseline gap-1 mt-2">
+<span class="text-4xl font-black text-[#111816] dark:text-white">Custom</span>
+</div>
+<p class="text-sm text-[#61897c] mt-4">Tailored solutions for large-scale global operations.</p>
+</div>
+<div class="flex-1">
+<ul class="space-y-4 mb-8">
+<li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-primary">done</span> Dedicated Solution Architect</li>
+<li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-primary">done</span> Custom SLA Guarantees</li>
+<li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-primary">done</span> Hybrid-Cloud Specialists</li>
+<li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-primary">done</span> White-Glove Migration</li>
+</ul>
+</div>
+<button class="w-full py-3 border border-primary text-primary font-bold rounded-lg hover:bg-primary/5 transition-colors">Book Consultation</button>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-white dark:bg-[#0c1814] border-t border-[#f0f4f3] dark:border-[#1a332a] py-12 px-6">
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 text-[#111816] dark:text-white mb-6">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold font-display">Green Exchange Tech Labs</h2>
+</div>
+<p class="text-[#61897c] dark:text-white/60 max-w-sm mb-6">
+                    Building the future of sustainable and high-performance cloud infrastructure. Trusted by leading enterprises worldwide.
+                </p>
+<div class="flex gap-4">
+<a class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">public</span></a>
+<a class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">alternate_email</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-6">Services</h4>
+<ul class="space-y-4 text-sm text-[#61897c] dark:text-white/60">
+<li><a class="hover:text-primary transition-colors" href="#">Cloud Migration</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Architecture Design</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Managed Services</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Security Audit</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Company</h4>
+<ul class="space-y-4 text-sm text-[#61897c] dark:text-white/60">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Partners</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto mt-12 pt-8 border-t border-[#f0f4f3] dark:border-[#1a332a] text-center text-xs text-[#61897c] dark:text-white/40">
+            © 2024 Green Exchange Tech Labs. All rights reserved.
+        </div>
+</footer>
+</body></html>

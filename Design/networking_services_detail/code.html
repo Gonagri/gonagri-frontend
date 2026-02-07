@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Networking Services Detail - Green Exchange Tech Labs</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#10b77f",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#10221c",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Space Grotesk", sans-serif;
+        }
+        .network-grid {
+            background-image: radial-gradient(circle at 2px 2px, rgba(16, 183, 127, 0.05) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-300">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-solid border-slate-200 dark:border-[#283933] bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-[1200px] mx-auto px-4 lg:px-10 flex h-16 items-center justify-between whitespace-nowrap">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-primary">
+<div class="size-6">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold tracking-tight">Green Exchange Tech Labs</h2>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium text-primary" href="#">Services</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">About</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden lg:flex items-center bg-slate-200 dark:bg-[#283933] rounded-lg px-3 py-1.5 gap-2">
+<span class="material-symbols-outlined text-slate-500 dark:text-[#9db9b0] text-sm">search</span>
+<span class="text-slate-500 dark:text-[#9db9b0] text-sm">Search services...</span>
+</button>
+<button class="bg-primary hover:bg-primary/90 text-background-dark px-5 py-2 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20">
+                    Get a Quote
+                </button>
+</div>
+</div>
+</header>
+<main class="network-grid">
+<!-- Hero Section -->
+<section class="max-w-[1200px] mx-auto px-4 py-8 lg:py-16">
+<div class="@container">
+<div class="relative overflow-hidden rounded-xl bg-slate-900 dark:bg-black min-h-[500px] flex items-end">
+<!-- Hero Background Image/Gradient -->
+<div class="absolute inset-0 z-0 opacity-40 dark:opacity-60 grayscale hover:grayscale-0 transition-all duration-700" data-alt="Modern server room with complex fiber optic networking blue and green cables" style='background-image: linear-gradient(to top, rgba(16, 183, 127, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDlZ5yAF9xmNd4b5wUKsL1Rij5oaDMqe3ondM4jNgCExmv0OzrT-WT_VqiiDv4GmGdaAgjzBzIIMdcRe1UKy9-Ez4C14uFLltiFxS6SGM-meqXXyDW1nxpJBZcnqF3KcezwdI4a7kvjNwokH20EPpAvveOCOuI_j820i9JBH1HXQjgJDyofzZ7pqxITPw0Yc1lFj5S4BmcXBcjNe8hWMomPKY9TRjLzvNGW4bRcnxSosZrZpX8CjGs9bxQ6HL7gE4m8cIhUoSbLkXNK"); background-size: cover; background-position: center;'>
+</div>
+<div class="relative z-10 p-6 lg:p-12 max-w-3xl">
+<div class="inline-block px-3 py-1 bg-primary/20 text-primary border border-primary/30 rounded-full text-xs font-bold uppercase tracking-widest mb-4">
+                            Infrastructure Excellence
+                        </div>
+<h1 class="text-white text-4xl lg:text-6xl font-black leading-tight tracking-tight mb-6">
+                            Robust Networking Solutions for Seamless Connectivity
+                        </h1>
+<p class="text-slate-300 text-lg lg:text-xl font-normal leading-relaxed mb-8 max-w-2xl">
+                            Scalable, secure, and high-performance infrastructure tailored for modern enterprise needs. From complex cloud integrations to local site optimization.
+                        </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary hover:bg-primary/90 text-background-dark px-8 py-4 rounded-lg text-base font-bold transition-all flex items-center gap-2">
+<span class="material-symbols-outlined">analytics</span>
+                                Get a Network Audit
+                            </button>
+<button class="bg-white/10 hover:bg-white/20 text-white backdrop-blur-md px-8 py-4 rounded-lg text-base font-bold transition-all border border-white/20">
+                                View Case Studies
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Services -->
+<section class="max-w-[1200px] mx-auto px-4 py-12 lg:py-20">
+<div class="mb-12">
+<h2 class="text-3xl font-bold tracking-tight mb-2">Our Core Networking Services</h2>
+<div class="h-1 w-20 bg-primary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Service 1 -->
+<div class="group p-8 rounded-xl border border-slate-200 dark:border-[#3b544b] bg-white dark:bg-[#1c2723] hover:border-primary transition-all duration-300">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">hub</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Network Design</h3>
+<p class="text-slate-600 dark:text-[#9db9b0] text-sm leading-relaxed">
+                        Custom-built architectures designed for peak efficiency and long-term scalability.
+                    </p>
+</div>
+<!-- Service 2 -->
+<div class="group p-8 rounded-xl border border-slate-200 dark:border-[#3b544b] bg-white dark:bg-[#1c2723] hover:border-primary transition-all duration-300">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">router</span>
+</div>
+<h3 class="text-xl font-bold mb-3">LAN/WAN Setup</h3>
+<p class="text-slate-600 dark:text-[#9db9b0] text-sm leading-relaxed">
+                        Seamless local and wide area connectivity across multiple geographic locations.
+                    </p>
+</div>
+<!-- Service 3 -->
+<div class="group p-8 rounded-xl border border-slate-200 dark:border-[#3b544b] bg-white dark:bg-[#1c2723] hover:border-primary transition-all duration-300">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">wifi</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Wireless Solutions</h3>
+<p class="text-slate-600 dark:text-[#9db9b0] text-sm leading-relaxed">
+                        High-speed, high-density secure wireless infrastructure for busy office environments.
+                    </p>
+</div>
+<!-- Service 4 -->
+<div class="group p-8 rounded-xl border border-slate-200 dark:border-[#3b544b] bg-white dark:bg-[#1c2723] hover:border-primary transition-all duration-300">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">vpn_lock</span>
+</div>
+<h3 class="text-xl font-bold mb-3">VPN &amp; Remote Access</h3>
+<p class="text-slate-600 dark:text-[#9db9b0] text-sm leading-relaxed">
+                        Encrypted tunnels providing secure access for a modern distributed workforce.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Tech Stack -->
+<section class="bg-slate-100 dark:bg-black/40 py-16 border-y border-slate-200 dark:border-[#283933]">
+<div class="max-w-[1200px] mx-auto px-4 text-center">
+<h3 class="text-lg font-bold uppercase tracking-widest text-slate-500 dark:text-[#9db9b0] mb-10">Trusted Technology Partners</h3>
+<div class="flex flex-wrap justify-center items-center gap-12 lg:gap-24 opacity-60">
+<div class="flex items-center gap-3 text-2xl font-bold group hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-3xl">memory</span> CISCO
+                    </div>
+<div class="flex items-center gap-3 text-2xl font-bold group hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-3xl">podcasts</span> UBIQUITI
+                    </div>
+<div class="flex items-center gap-3 text-2xl font-bold group hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-3xl">layers</span> JUNIPER
+                    </div>
+<div class="flex items-center gap-3 text-2xl font-bold group hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-3xl">cloud</span> ARISTA
+                    </div>
+</div>
+</div>
+</section>
+<!-- Implementation Lifecycle -->
+<section class="max-w-[1200px] mx-auto px-4 py-20">
+<div class="text-center mb-16">
+<h2 class="text-3xl lg:text-4xl font-bold mb-4">Implementation Lifecycle</h2>
+<p class="text-slate-500 dark:text-[#9db9b0] max-w-2xl mx-auto">Our rigorous 5-step process ensures your network is built for reliability, security, and performance from day one.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-8 relative">
+<!-- Line -->
+<div class="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-slate-200 dark:bg-[#3b544b] -z-10"></div>
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-full bg-primary text-background-dark flex items-center justify-center font-bold text-xl mb-4 border-4 border-background-light dark:border-background-dark">1</div>
+<h4 class="font-bold mb-2">Discovery</h4>
+<p class="text-xs text-slate-500 dark:text-[#9db9b0]">Audit of existing infrastructure and future needs.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-full bg-primary text-background-dark flex items-center justify-center font-bold text-xl mb-4 border-4 border-background-light dark:border-background-dark">2</div>
+<h4 class="font-bold mb-2">Design</h4>
+<p class="text-xs text-slate-500 dark:text-[#9db9b0]">Blueprint creation with focus on redundancy.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-full bg-primary text-background-dark flex items-center justify-center font-bold text-xl mb-4 border-4 border-background-light dark:border-background-dark">3</div>
+<h4 class="font-bold mb-2">Deployment</h4>
+<p class="text-xs text-slate-500 dark:text-[#9db9b0]">Hardware setup and zero-downtime integration.</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-full bg-primary text-background-dark flex items-center justify-center font-bold text-xl mb-4 border-4 border-background-light dark:border-background-dark">4</div>
+<h4 class="font-bold mb-2">Optimization</h4>
+<p class="text-xs text-slate-500 dark:text-[#9db9b0]">Traffic shaping and security hardening.</p>
+</div>
+<!-- Step 5 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-full bg-primary text-background-dark flex items-center justify-center font-bold text-xl mb-4 border-4 border-background-light dark:border-background-dark">5</div>
+<h4 class="font-bold mb-2">Ongoing Support</h4>
+<p class="text-xs text-slate-500 dark:text-[#9db9b0]">24/7 monitoring and proactive maintenance.</p>
+</div>
+</div>
+</section>
+<!-- Pricing Tiers -->
+<section class="max-w-[1200px] mx-auto px-4 py-20 border-t border-slate-200 dark:border-[#283933]">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold mb-4">Flexible Service Tiers</h2>
+<p class="text-slate-500 dark:text-[#9db9b0]">Right-sized networking packages for every stage of growth.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Tier 1 -->
+<div class="bg-white dark:bg-[#1c2723] rounded-xl p-8 border border-slate-200 dark:border-[#3b544b] flex flex-col h-full">
+<h4 class="text-lg font-bold mb-2">Small Business</h4>
+<p class="text-slate-500 dark:text-[#9db9b0] text-sm mb-6">Essential connectivity for startups and small offices.</p>
+<div class="text-4xl font-black mb-8">$1,499<span class="text-sm font-normal text-slate-400">/setup</span></div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span> Single Site Setup
+                        </li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span> High-Speed Wi-Fi 6
+                        </li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span> Basic Firewall Security
+                        </li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span> 8/5 Remote Support
+                        </li>
+</ul>
+<button class="w-full py-3 rounded-lg border-2 border-primary text-primary hover:bg-primary hover:text-background-dark font-bold transition-all">Select Plan</button>
+</div>
+<!-- Tier 2 -->
+<div class="bg-white dark:bg-[#1c2723] rounded-xl p-8 border-2 border-primary shadow-2xl shadow-primary/10 flex flex-col h-full relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-primary text-background-dark text-[10px] font-black px-4 py-1 uppercase tracking-tighter transform rotate-45 translate-x-10 translate-y-4 w-40 text-center">Popular</div>
+<h4 class="text-lg font-bold mb-2">Enterprise</h4>
+<p class="text-slate-500 dark:text-[#9db9b0] text-sm mb-6">Robust architecture for scaling organizations.</p>
+<div class="text-4xl font-black mb-8">$4,999<span class="text-sm font-normal text-slate-400">/setup</span></div>
+<ul class="space-y-4 mb-10 flex-grow text-white">
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span> Multi-site VPN/SD-WAN
+                        </li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span> High Availability (Redundancy)
+                        </li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span> IDS/IPS Security Hardening
+                        </li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span> 24/7 Critical Support
+                        </li>
+</ul>
+<button class="w-full py-3 rounded-lg bg-primary text-background-dark font-bold transition-all hover:brightness-110">Get Started</button>
+</div>
+<!-- Tier 3 -->
+<div class="bg-white dark:bg-[#1c2723] rounded-xl p-8 border border-slate-200 dark:border-[#3b544b] flex flex-col h-full">
+<h4 class="text-lg font-bold mb-2">Data Center</h4>
+<p class="text-slate-500 dark:text-[#9db9b0] text-sm mb-6">Maximum throughput for mission-critical loads.</p>
+<div class="text-4xl font-black mb-8">Custom<span class="text-sm font-normal text-slate-400">/quote</span></div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span> 100G Backbone Integration
+                        </li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span> Custom Hardware Engineering
+                        </li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span> Compliance Ready Architecture
+                        </li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span> Dedicated Success Manager
+                        </li>
+</ul>
+<button class="w-full py-3 rounded-lg border-2 border-slate-300 dark:border-slate-700 hover:border-primary font-bold transition-all">Contact Sales</button>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="max-w-[1200px] mx-auto px-4 pb-20">
+<div class="bg-primary rounded-2xl p-8 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-8 overflow-hidden relative">
+<div class="absolute -right-20 -top-20 opacity-10">
+<span class="material-symbols-outlined text-[300px]">network_ping</span>
+</div>
+<div class="text-background-dark max-w-xl">
+<h2 class="text-3xl lg:text-5xl font-black mb-4">Ready to stabilize your digital backbone?</h2>
+<p class="text-background-dark/80 text-lg">Schedule a consultation with our network engineers today and eliminate bottlenecks.</p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
+<button class="bg-background-dark text-primary px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform">Schedule Call</button>
+<button class="bg-primary-dark/20 border-2 border-background-dark/20 text-background-dark px-8 py-4 rounded-xl font-bold text-lg hover:bg-background-dark/10 transition-colors">Chat With Expert</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-900 text-white py-12 border-t border-[#283933]">
+<div class="max-w-[1200px] mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-3 text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">terminal</span>
+<h2 class="text-lg font-bold">Green Exchange</h2>
+</div>
+<p class="text-slate-400 text-sm leading-relaxed">
+                        Leading the transition to secure, green, and high-performance infrastructure for the next generation of business.
+                    </p>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-primary uppercase tracking-widest text-xs">Solutions</h4>
+<ul class="space-y-4 text-sm text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Networking</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cloud Migration</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cybersecurity</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Data Analytics</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-primary uppercase tracking-widest text-xs">Company</h4>
+<ul class="space-y-4 text-sm text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Our Portfolio</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Sustainability</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-primary uppercase tracking-widest text-xs">Newsletter</h4>
+<p class="text-sm text-slate-400 mb-4 text-sm">Get tech insights in your inbox.</p>
+<div class="flex">
+<input class="bg-[#1c2723] border-[#283933] text-sm rounded-l-lg w-full focus:ring-primary focus:border-primary" placeholder="Email" type="email"/>
+<button class="bg-primary text-background-dark px-4 rounded-r-lg">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-[#283933] flex flex-col md:row items-center justify-between gap-4 text-xs text-slate-500">
+<p>© 2024 Green Exchange Tech Labs. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

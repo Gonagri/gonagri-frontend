@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import QueryProvider from "./providers/Queryprovider";
 
@@ -32,6 +33,23 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
+      <head>
+        {/* Google tag (gtag.js) */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-7N7HXCNVGC"
+        />
+
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-7N7HXCNVGC');
+          `}
+        </Script>
+      </head>
+
       <body className="font-sans bg-gray-50 text-gray-800">
         <QueryProvider>{children}</QueryProvider>
       </body>

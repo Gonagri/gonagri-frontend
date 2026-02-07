@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Green Exchange Tech Labs - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#10b77f",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#10221c",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111816] dark:text-white transition-colors duration-200">
+<!-- Navigation Bar -->
+<div class="relative flex flex-col w-full bg-white dark:bg-background-dark border-b border-[#e5e9e8] dark:border-[#1e3a30] sticky top-0 z-50">
+<div class="max-w-[1280px] mx-auto w-full px-6 md:px-10 py-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<span class="material-symbols-outlined text-3xl">eco</span>
+</div>
+<h2 class="text-[#111816] dark:text-white text-xl font-bold tracking-tight">Green Exchange Tech Labs</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-10 items-center">
+<nav class="flex items-center gap-8">
+<a class="text-[#111816] dark:text-gray-300 text-sm font-semibold hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-[#111816] dark:text-gray-300 text-sm font-semibold hover:text-primary transition-colors" href="#">About</a>
+<a class="text-[#111816] dark:text-gray-300 text-sm font-semibold hover:text-primary transition-colors" href="#">Services</a>
+</nav>
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold tracking-wide hover:brightness-110 active:scale-95 transition-all">
+                    Get Started
+                </button>
+</div>
+</div>
+</div>
+<!-- Hero Section -->
+<section class="max-w-[1280px] mx-auto w-full px-6 md:px-10 py-12 md:py-20">
+<div class="@container">
+<div class="flex flex-col gap-10 @[864px]:flex-row items-center">
+<div class="flex flex-col gap-8 @[864px]:flex-1">
+<div class="flex flex-col gap-4 text-left">
+<h1 class="text-[#111816] dark:text-white text-4xl font-black leading-tight tracking-tight @[480px]:text-6xl">
+                            Innovative Technology Solutions for <span class="text-primary">Modern Businesses</span>
+</h1>
+<p class="text-[#4b5e58] dark:text-gray-400 text-lg md:text-xl font-normal max-w-[600px] leading-relaxed">
+                            Empowering your enterprise with cutting-edge software engineering, cloud architecture, and digital transformation tailored for the future.
+                        </p>
+</div>
+<div class="flex flex-wrap gap-4">
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-14 px-6 bg-primary text-white text-base font-bold tracking-wide shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all">
+                            Get Started
+                        </button>
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-14 px-6 bg-[#e5ecea] dark:bg-[#1e3a30] text-[#111816] dark:text-white text-base font-bold tracking-wide hover:bg-[#dbe6e2] dark:hover:bg-[#2a4d41] transition-all">
+                            View Services
+                        </button>
+</div>
+</div>
+<div class="w-full @[864px]:flex-1 h-[300px] @[864px]:h-[480px] bg-center bg-no-repeat bg-cover rounded-2xl shadow-2xl relative overflow-hidden" data-alt="Modern tech office with futuristic interface overlay" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCbH0WxW8pGD1DJk61Eaju-0a_eBPhvPH34gfICoYDc2B9pJltQtC_Tdje07l-CHaCiO89ZMfBBGyCq4iZPJSzxuzlc-I8WPpoXD2MexoNDpPksR2c8mFkSi769RyHXV5Rug4YPUwQA-4_7f3lWpyquwok1s3_sw5FC1uBpVK34H4HtlM84PBNkZmk1iQJ1j-X3Lvt-kTrm57JRqv87kcUsi8SvHC485cApC5c8T0M9gk3-GOQ51qsLm4pvvYrrRMqvFp792Xk5l4X3");'>
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Overview -->
+<section class="bg-white dark:bg-background-dark/50 py-20 border-y border-[#e5e9e8] dark:border-[#1e3a30]">
+<div class="max-w-[1280px] mx-auto w-full px-6 md:px-10">
+<div class="flex flex-col gap-4 mb-12">
+<h2 class="text-[#111816] dark:text-white text-3xl font-bold tracking-tight">Our Services</h2>
+<div class="h-1.5 w-20 bg-primary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<!-- Service 1 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-[#dbe6e2] dark:border-[#1e3a30] bg-white dark:bg-[#152b24] p-6 hover:shadow-xl hover:border-primary/50 transition-all cursor-default">
+<div class="text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl">computer</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#111816] dark:text-white text-lg font-bold">Web Development</h3>
+<p class="text-[#61897c] dark:text-gray-400 text-sm leading-normal">Custom web applications built with modern frameworks and high performance.</p>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-[#dbe6e2] dark:border-[#1e3a30] bg-white dark:bg-[#152b24] p-6 hover:shadow-xl hover:border-primary/50 transition-all cursor-default">
+<div class="text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl">smartphone</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#111816] dark:text-white text-lg font-bold">Mobile Apps</h3>
+<p class="text-[#61897c] dark:text-gray-400 text-sm leading-normal">Seamless native and cross-platform experiences for iOS and Android.</p>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-[#dbe6e2] dark:border-[#1e3a30] bg-white dark:bg-[#152b24] p-6 hover:shadow-xl hover:border-primary/50 transition-all cursor-default">
+<div class="text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl">cloud_queue</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#111816] dark:text-white text-lg font-bold">Cloud Solutions</h3>
+<p class="text-[#61897c] dark:text-gray-400 text-sm leading-normal">Scalable cloud infrastructure, migration, and optimized management.</p>
+</div>
+</div>
+<!-- Service 4 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-[#dbe6e2] dark:border-[#1e3a30] bg-white dark:bg-[#152b24] p-6 hover:shadow-xl hover:border-primary/50 transition-all cursor-default">
+<div class="text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl">security</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#111816] dark:text-white text-lg font-bold">Cybersecurity</h3>
+<p class="text-[#61897c] dark:text-gray-400 text-sm leading-normal">Enterprise-grade protection and proactive threat intelligence.</p>
+</div>
+</div>
+<!-- Service 5 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-[#dbe6e2] dark:border-[#1e3a30] bg-white dark:bg-[#152b24] p-6 hover:shadow-xl hover:border-primary/50 transition-all cursor-default">
+<div class="text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl">memory</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#111816] dark:text-white text-lg font-bold">AI/ML</h3>
+<p class="text-[#61897c] dark:text-gray-400 text-sm leading-normal">Advanced machine learning models and intelligent automation systems.</p>
+</div>
+</div>
+<!-- Service 6 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-[#dbe6e2] dark:border-[#1e3a30] bg-white dark:bg-[#152b24] p-6 hover:shadow-xl hover:border-primary/50 transition-all cursor-default">
+<div class="text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl">terminal</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#111816] dark:text-white text-lg font-bold">DevOps</h3>
+<p class="text-[#61897c] dark:text-gray-400 text-sm leading-normal">Automated deployment pipelines and robust operations architecture.</p>
+</div>
+</div>
+<!-- Service 7 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-[#dbe6e2] dark:border-[#1e3a30] bg-white dark:bg-[#152b24] p-6 hover:shadow-xl hover:border-primary/50 transition-all cursor-default">
+<div class="text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl">analytics</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#111816] dark:text-white text-lg font-bold">Data Analytics</h3>
+<p class="text-[#61897c] dark:text-gray-400 text-sm leading-normal">Transforming raw data into actionable business intelligence.</p>
+</div>
+</div>
+<!-- Service 8 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-[#dbe6e2] dark:border-[#1e3a30] bg-white dark:bg-[#152b24] p-6 hover:shadow-xl hover:border-primary/50 transition-all cursor-default">
+<div class="text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl">palette</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#111816] dark:text-white text-lg font-bold">UI/UX Design</h3>
+<p class="text-[#61897c] dark:text-gray-400 text-sm leading-normal">User-centric digital product design and high-fidelity prototyping.</p>
+</div>
+</div>
+<!-- Service 9 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-[#dbe6e2] dark:border-[#1e3a30] bg-white dark:bg-[#152b24] p-6 hover:shadow-xl hover:border-primary/50 transition-all cursor-default">
+<div class="text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl">groups</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#111816] dark:text-white text-lg font-bold">IT Consulting</h3>
+<p class="text-[#61897c] dark:text-gray-400 text-sm leading-normal">Strategic technology roadmaps and planning for scale.</p>
+</div>
+</div>
+<!-- Service 10 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-[#dbe6e2] dark:border-[#1e3a30] bg-white dark:bg-[#152b24] p-6 hover:shadow-xl hover:border-primary/50 transition-all cursor-default">
+<div class="text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl">update</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#111816] dark:text-white text-lg font-bold">Legacy Migration</h3>
+<p class="text-[#61897c] dark:text-gray-400 text-sm leading-normal">Seamlessly modernizing your existing technology stack.</p>
+</div>
+</div>
+<!-- Service 11 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-[#dbe6e2] dark:border-[#1e3a30] bg-white dark:bg-[#152b24] p-6 hover:shadow-xl hover:border-primary/50 transition-all cursor-default">
+<div class="text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl">sensors</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#111816] dark:text-white text-lg font-bold">IoT</h3>
+<p class="text-[#61897c] dark:text-gray-400 text-sm leading-normal">Smart device connectivity and ecosystem development.</p>
+</div>
+</div>
+<!-- Service 12 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-[#dbe6e2] dark:border-[#1e3a30] bg-white dark:bg-[#152b24] p-6 hover:shadow-xl hover:border-primary/50 transition-all cursor-default">
+<div class="text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl">link</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#111816] dark:text-white text-lg font-bold">API Integration</h3>
+<p class="text-[#61897c] dark:text-gray-400 text-sm leading-normal">Building unified systems through secure and robust API layers.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="max-w-[1280px] mx-auto w-full px-6 md:px-10 py-20 @container">
+<div class="flex flex-col gap-12">
+<div class="flex flex-col gap-4">
+<h2 class="text-[#111816] dark:text-white text-3xl font-bold tracking-tight @[480px]:text-4xl">Why Choose Us</h2>
+<p class="text-[#4b5e58] dark:text-gray-400 text-lg max-w-[720px]">We deliver excellence through a combination of elite talent, secure processes, and agile principles.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="flex flex-col gap-4 p-6 rounded-2xl bg-[#eef6f3] dark:bg-[#1a332a]">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#111816] dark:text-white text-lg font-bold">Agile Methodology</h3>
+<p class="text-[#61897c] dark:text-gray-400 text-sm font-normal">Fast, iterative development cycles that deliver value early.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 p-6 rounded-2xl bg-[#eef6f3] dark:bg-[#1a332a]">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined">gpp_good</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#111816] dark:text-white text-lg font-bold">Enterprise-Grade</h3>
+<p class="text-[#61897c] dark:text-gray-400 text-sm font-normal">Highest standards of data protection and compliance protocols.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 p-6 rounded-2xl bg-[#eef6f3] dark:bg-[#1a332a]">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined">grade</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#111816] dark:text-white text-lg font-bold">Expert Talent</h3>
+<p class="text-[#61897c] dark:text-gray-400 text-sm font-normal">Our team consists of the top 1% industry software specialists.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 p-6 rounded-2xl bg-[#eef6f3] dark:bg-[#1a332a]">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined">support_agent</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#111816] dark:text-white text-lg font-bold">24/7 Support</h3>
+<p class="text-[#61897c] dark:text-gray-400 text-sm font-normal">Round-the-clock technical assistance and incident response.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="bg-primary/5 dark:bg-[#0c1814] py-20">
+<div class="max-w-[1280px] mx-auto w-full px-6 md:px-10">
+<div class="text-center mb-16">
+<h2 class="text-[#111816] dark:text-white text-3xl font-bold mb-4">What Our Clients Say</h2>
+<p class="text-gray-500 dark:text-gray-400 max-w-[600px] mx-auto">Trusted by innovative leaders across various industries worldwide.</p>
+</div>
+<div class="flex gap-6 overflow-x-auto pb-8 snap-x no-scrollbar">
+<!-- Testimonial 1 -->
+<div class="min-w-[320px] md:min-w-[400px] snap-center bg-white dark:bg-[#152b24] p-8 rounded-2xl shadow-sm border border-[#dbe6e2] dark:border-[#1e3a30] flex flex-col gap-6">
+<div class="flex gap-1 text-primary">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+<p class="text-gray-700 dark:text-gray-300 italic">"Green Exchange Tech Labs transformed our legacy platform into a high-performance cloud ecosystem. Their attention to detail is unmatched."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden" data-alt="Client portrait male executive">
+<img alt="Sarah J." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwxnXxQaW1A5Xlbyl01TmDWCHrWObVXYub-PiXBgK-cfHF8uT6Ty5cGtjjf1WUXkJrfr5mYB9EBE5rEpewEa31C3qtqWJ-no8ftNVxeAHSHSckguvbbQB5tZv7zxM5D7_EK0GI42TRhmZh-s9sB_mE8xjvjTDWNH_0GoF9k-zU8YfwsVMCFJ3838K_rhr-R0HYzsGuirofqd9x9DqMHoV0e0EE-aPpgERlT6XLJxtf2fTfJFwbJ80vdTMW3TbLY14_fLoVw5k9obhQ"/>
+</div>
+<div>
+<p class="font-bold text-[#111816] dark:text-white">Marcus Thorne</p>
+<p class="text-sm text-gray-500">CTO, NexaCorp</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="min-w-[320px] md:min-w-[400px] snap-center bg-white dark:bg-[#152b24] p-8 rounded-2xl shadow-sm border border-[#dbe6e2] dark:border-[#1e3a30] flex flex-col gap-6">
+<div class="flex gap-1 text-primary">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+<p class="text-gray-700 dark:text-gray-300 italic">"The AI/ML integration they developed for our logistics operation has improved efficiency by over 40% in just six months."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden" data-alt="Client portrait female lead engineer">
+<img alt="Elena R." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaP38PZbpXPvmhbo3zHw29ztHAn5M5aqgQZ3toklFUF4PgbaGlphc4M42EDjoRhT5ZpAAZXjHG_yd-aLplZ-k6w9uX4vsYc-lF3yoPM2c7wl1qn_QzAZngrnCoSoHj_Ilvf2NCO6GpmGVlOUPGIyssL6y52n_rS78VRZ1uCRnrYvQHpJSy0kMZfxtHo48jVGZ6YI_2N695IKqpNBp6iqziuKZc0lD_62x-BW4pOikfkgRFgMOoWt-4cqCZf5eLU42mtRJqv8AEOjEZ"/>
+</div>
+<div>
+<p class="font-bold text-[#111816] dark:text-white">Elena Rodriguez</p>
+<p class="text-sm text-gray-500">Product Lead, SwiftLog</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="min-w-[320px] md:min-w-[400px] snap-center bg-white dark:bg-[#152b24] p-8 rounded-2xl shadow-sm border border-[#dbe6e2] dark:border-[#1e3a30] flex flex-col gap-6">
+<div class="flex gap-1 text-primary">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+<p class="text-gray-700 dark:text-gray-300 italic">"Responsive, secure, and incredibly knowledgeable. They aren't just a vendor; they are a strategic partner in our digital growth."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden" data-alt="Client portrait male founder">
+<img alt="John D." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4c-CA7_26lV7XeUrSSmRj-y0C-2eqPEnruMw51IrGoDEZmIuqw5X6tRGAD-99mx4-k83YgjjtS4AOQQYn7lRRVKTPFCI4FjFJN97vdUnt9wc5iiGDhSImweCuknSMR7KDGpiFhMyNbSXQOPf0-FZ7p64qXXBfdRznhnOfQF0r-Q5ZQiHUnBu6itKwq1GC28Vzem0hmaoS-cg7jx9sNYqQHdyOHpnhEwXQ9-HNCyjO4QngDtVwScd6U3BnMd8Y1AshRXI0liaLitvz"/>
+</div>
+<div>
+<p class="font-bold text-[#111816] dark:text-white">James Chen</p>
+<p class="text-sm text-gray-500">Founder, Orbit FinTech</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-[1280px] mx-auto w-full px-6 md:px-10 py-20 text-center">
+<div class="bg-primary rounded-[2rem] p-12 md:p-20 flex flex-col items-center gap-8 shadow-2xl shadow-primary/20">
+<h2 class="text-white text-3xl md:text-5xl font-black max-w-[800px] leading-tight">Ready to Modernize Your Business?</h2>
+<p class="text-white/80 text-lg md:text-xl max-w-[600px]">Join hundreds of industry leaders who have already transformed their digital capabilities with us.</p>
+<button class="bg-white text-primary px-10 py-5 rounded-full font-bold text-lg hover:scale-105 transition-transform">Get Started Today</button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark border-t border-[#e5e9e8] dark:border-[#1e3a30] py-16">
+<div class="max-w-[1280px] mx-auto px-6 md:px-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-primary">
+<span class="material-symbols-outlined text-3xl">eco</span>
+</div>
+<h2 class="text-[#111816] dark:text-white text-lg font-bold">Green Exchange</h2>
+</div>
+<p class="text-[#61897c] dark:text-gray-400 text-sm leading-relaxed">Innovating for a smarter, greener digital future. Your partner in digital transformation.</p>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-[#111816] dark:text-white uppercase tracking-wider text-xs">Solutions</h4>
+<ul class="flex flex-col gap-4 text-sm text-[#4b5e58] dark:text-gray-400">
+<li><a class="hover:text-primary" href="#">Cloud Architecture</a></li>
+<li><a class="hover:text-primary" href="#">AI Strategy</a></li>
+<li><a class="hover:text-primary" href="#">Cybersecurity</a></li>
+<li><a class="hover:text-primary" href="#">Software Dev</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-[#111816] dark:text-white uppercase tracking-wider text-xs">Company</h4>
+<ul class="flex flex-col gap-4 text-sm text-[#4b5e58] dark:text-gray-400">
+<li><a class="hover:text-primary" href="#">About Us</a></li>
+<li><a class="hover:text-primary" href="#">Careers</a></li>
+<li><a class="hover:text-primary" href="#">Case Studies</a></li>
+<li><a class="hover:text-primary" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-[#111816] dark:text-white uppercase tracking-wider text-xs">Legal</h4>
+<ul class="flex flex-col gap-4 text-sm text-[#4b5e58] dark:text-gray-400">
+<li><a class="hover:text-primary" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-primary" href="#">Terms of Service</a></li>
+<li><a class="hover:text-primary" href="#">Cookie Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-[#e5e9e8] dark:border-[#1e3a30] gap-4">
+<p class="text-sm text-[#61897c] dark:text-gray-500">© 2024 Green Exchange Tech Labs. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-[#61897c] hover:text-primary" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-[#61897c] hover:text-primary" href="#"><span class="material-symbols-outlined">public</span></a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

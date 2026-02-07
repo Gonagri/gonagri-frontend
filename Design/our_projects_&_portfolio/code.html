@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Projects &amp; Portfolio | Green Exchange Tech Labs</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#10b77f",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#10221c",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111816] dark:text-[#f0f4f3] transition-colors duration-200">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-solid border-[#f0f4f3] dark:border-[#2a3a35]">
+<div class="max-w-[1280px] mx-auto flex items-center justify-between px-10 py-3">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3">
+<div class="size-8 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-[#111816] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Green Exchange</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[#111816] dark:text-[#f0f4f3] text-sm font-medium hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-[#111816] dark:text-[#f0f4f3] text-sm font-medium hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-primary text-sm font-bold border-b-2 border-primary" href="#">Portfolio</a>
+<a class="text-[#111816] dark:text-[#f0f4f3] text-sm font-medium hover:text-primary transition-colors" href="#">About</a>
+<a class="text-[#111816] dark:text-[#f0f4f3] text-sm font-medium hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end gap-6 items-center">
+<label class="hidden lg:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full overflow-hidden bg-[#f0f4f3] dark:bg-[#23332d]">
+<div class="text-[#61897c] flex items-center justify-center pl-4">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none border-none bg-transparent focus:outline-0 focus:ring-0 placeholder:text-[#61897c] pl-2 text-sm font-normal" placeholder="Search projects..." value=""/>
+</div>
+</label>
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal hover:opacity-90 transition-opacity shadow-sm shadow-primary/20">
+                    Get a Quote
+                </button>
+</div>
+</div>
+</header>
+<main class="max-w-[1280px] mx-auto px-10 py-12">
+<!-- Page Heading -->
+<div class="mb-10 text-center md:text-left">
+<div class="flex flex-col gap-3">
+<h1 class="text-[#111816] dark:text-white text-5xl font-black leading-tight tracking-[-0.033em]">Our Projects &amp; Portfolio</h1>
+<p class="text-[#61897c] dark:text-[#97b1a9] text-lg font-normal leading-normal max-w-2xl">
+                    Discover how we leverage Web, App, and AI technologies to drive innovation and sustainability across global industries.
+                </p>
+</div>
+</div>
+<!-- Filter System -->
+<div class="flex flex-col gap-6 mb-12">
+<!-- Service Type Filter -->
+<div class="flex flex-col gap-2">
+<span class="text-xs font-bold uppercase tracking-widest text-[#61897c]">Service Type</span>
+<div class="flex gap-3 flex-wrap">
+<button class="flex h-10 items-center justify-center rounded-lg bg-primary text-white px-6 transition-all shadow-md shadow-primary/20">
+<p class="text-sm font-semibold">All Projects</p>
+</button>
+<button class="flex h-10 items-center justify-center rounded-lg bg-white dark:bg-[#23332d] hover:bg-[#f0f4f3] dark:hover:bg-[#2c3e38] text-[#111816] dark:text-white px-6 border border-[#e5e7eb] dark:border-[#354841] transition-all">
+<p class="text-sm font-medium">Web Development</p>
+</button>
+<button class="flex h-10 items-center justify-center rounded-lg bg-white dark:bg-[#23332d] hover:bg-[#f0f4f3] dark:hover:bg-[#2c3e38] text-[#111816] dark:text-white px-6 border border-[#e5e7eb] dark:border-[#354841] transition-all">
+<p class="text-sm font-medium">Mobile Apps</p>
+</button>
+<button class="flex h-10 items-center justify-center rounded-lg bg-white dark:bg-[#23332d] hover:bg-[#f0f4f3] dark:hover:bg-[#2c3e38] text-[#111816] dark:text-white px-6 border border-[#e5e7eb] dark:border-[#354841] transition-all">
+<p class="text-sm font-medium">AI/ML Solutions</p>
+</button>
+</div>
+</div>
+<!-- Industry & Tech Stack Filters -->
+<div class="flex flex-wrap gap-4">
+<div class="flex gap-3 flex-wrap">
+<button class="flex h-9 items-center gap-x-2 rounded-lg bg-white dark:bg-[#23332d] pl-4 pr-2 border border-[#e5e7eb] dark:border-[#354841] text-[#111816] dark:text-white hover:bg-[#f0f4f3] dark:hover:bg-[#2c3e38] transition-colors">
+<p class="text-xs font-bold uppercase tracking-tighter">Industry: All</p>
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+<button class="flex h-9 items-center gap-x-2 rounded-lg bg-white dark:bg-[#23332d] pl-4 pr-2 border border-[#e5e7eb] dark:border-[#354841] text-[#111816] dark:text-white hover:bg-[#f0f4f3] dark:hover:bg-[#2c3e38] transition-colors">
+<p class="text-xs font-bold uppercase tracking-tighter">Technology: All</p>
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+</div>
+<div class="h-9 w-px bg-[#e5e7eb] dark:bg-[#354841] hidden md:block"></div>
+<!-- Quick Tech Pills -->
+<div class="flex gap-2 flex-wrap">
+<button class="flex h-9 items-center justify-center rounded-full bg-[#f0f4f3] dark:bg-[#23332d] px-4 text-[#61897c] hover:bg-primary/10 hover:text-primary transition-colors">
+<span class="text-xs font-medium">React</span>
+</button>
+<button class="flex h-9 items-center justify-center rounded-full bg-[#f0f4f3] dark:bg-[#23332d] px-4 text-[#61897c] hover:bg-primary/10 hover:text-primary transition-colors">
+<span class="text-xs font-medium">Python</span>
+</button>
+<button class="flex h-9 items-center justify-center rounded-full bg-[#f0f4f3] dark:bg-[#23332d] px-4 text-[#61897c] hover:bg-primary/10 hover:text-primary transition-colors">
+<span class="text-xs font-medium">AWS</span>
+</button>
+<button class="flex h-9 items-center justify-center rounded-full bg-[#f0f4f3] dark:bg-[#23332d] px-4 text-[#61897c] hover:bg-primary/10 hover:text-primary transition-colors">
+<span class="text-xs font-medium">TensorFlow</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Project Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project Card 1 -->
+<div class="group flex flex-col bg-white dark:bg-[#1a2d26] rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="relative h-56 w-full overflow-hidden">
+<img alt="Project Image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Modern analytics dashboard on a screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTaUgdT0st3Jf7bF3df3VucLLeiuxWOp0iSn2xAk-Kq6cDBGSiMa4X_6kI2NBEIm9z-7aKLuD4oGA60Q_PJUSBPMBNII74PcueFf6gKkS0oE3QFTFz0PudsuSCsb8ljTI4I8bDtC6qnB3SIVfWDuzRi6t5aDGbcqSEemAbnegSqgnTUlP3F-vTNSHVsQyl_RYUM3RYFS_kCA4WAnFmysr_3W1CGKIuKruW0w_mlAIs3x2oRRcobjVFK4qotjxTGamVXmwNoakx2hrD"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 text-white text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded shadow-lg">AI Solutions</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<h3 class="text-xl font-bold text-[#111816] dark:text-white mb-2 group-hover:text-primary transition-colors">EcoTrack AI</h3>
+<p class="text-[#61897c] dark:text-[#97b1a9] text-sm leading-relaxed mb-4 line-clamp-2">
+                        Carbon footprint tracking platform using predictive analytics and machine learning to optimize corporate sustainability.
+                    </p>
+<div class="flex flex-wrap gap-2 mb-6 mt-auto">
+<span class="text-[10px] bg-[#f0f4f3] dark:bg-[#23332d] text-[#61897c] px-2 py-0.5 rounded uppercase font-semibold">Python</span>
+<span class="text-[10px] bg-[#f0f4f3] dark:bg-[#23332d] text-[#61897c] px-2 py-0.5 rounded uppercase font-semibold">React</span>
+<span class="text-[10px] bg-[#f0f4f3] dark:bg-[#23332d] text-[#61897c] px-2 py-0.5 rounded uppercase font-semibold">AWS</span>
+</div>
+<button class="w-full py-3 rounded-lg border border-primary text-primary font-bold text-sm hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2 group/btn">
+                        View Case Study
+                        <span class="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group flex flex-col bg-white dark:bg-[#1a2d26] rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="relative h-56 w-full overflow-hidden">
+<img alt="Project Image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Mobile app interface for fintech" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoyM9sndwbUemtSd0ztzaYNkKlKO69mAZbhBzSNl_ClIk_uxxRE8h_bMQatFcw3CtN1MMOiad85M4q1wnxjCDfi16rdT3CCjPwTJ0qXTtCKhCKpsCXderUvY6hOOnDYzSwxPvCuppiKUZb0DXZK1QMS32nodD4O9B9rUaIV1MWRBRPd-o1JtjD2WDqjw7D0_F70VSKq6x3LM5hra1BFvg6ErE_J4BQjqE-Dt98rLju3pFAhkfVaWqjDvyMgMTHFcwRHI2cZI1zDbrm"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 text-white text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded shadow-lg">Fintech</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<h3 class="text-xl font-bold text-[#111816] dark:text-white mb-2 group-hover:text-primary transition-colors">NexusPay Mobile</h3>
+<p class="text-[#61897c] dark:text-[#97b1a9] text-sm leading-relaxed mb-4 line-clamp-2">
+                        A seamless, secure cross-border payment application built with high-performance Flutter architecture.
+                    </p>
+<div class="flex flex-wrap gap-2 mb-6 mt-auto">
+<span class="text-[10px] bg-[#f0f4f3] dark:bg-[#23332d] text-[#61897c] px-2 py-0.5 rounded uppercase font-semibold">Flutter</span>
+<span class="text-[10px] bg-[#f0f4f3] dark:bg-[#23332d] text-[#61897c] px-2 py-0.5 rounded uppercase font-semibold">Node.js</span>
+<span class="text-[10px] bg-[#f0f4f3] dark:bg-[#23332d] text-[#61897c] px-2 py-0.5 rounded uppercase font-semibold">Docker</span>
+</div>
+<button class="w-full py-3 rounded-lg border border-primary text-primary font-bold text-sm hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2 group/btn">
+                        View Case Study
+                        <span class="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="group flex flex-col bg-white dark:bg-[#1a2d26] rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="relative h-56 w-full overflow-hidden">
+<img alt="Project Image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Healthcare technology devices on table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqV924zsxk-PJUYaz0dhb9dV38dSZxDwv-UbnjqwY1pbD4MuSYA4b7vQV7kOUnFwIyj7MXBwRg2RZfR1dg-AX60svFZIde_N6TSnHTsSanDfqzuLOnOEuzZmil7Wzie15O8PTzrrVulwJivNTgNnV9AkfZI3ZJArj2nNwXFppGpNbPuSoraiC-P1PI-mD40gcjl7AGIzsFtInT0jJOCjcvdhzje4CFNUKAY4IuKb757lXSpgDV58noXVvwoeovyF69ziajkH2mRFhd"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 text-white text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded shadow-lg">Healthcare</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<h3 class="text-xl font-bold text-[#111816] dark:text-white mb-2 group-hover:text-primary transition-colors">VitalFlow Web</h3>
+<p class="text-[#61897c] dark:text-[#97b1a9] text-sm leading-relaxed mb-4 line-clamp-2">
+                        Next-gen patient management dashboard for clinics, featuring real-time data sync and HIPAA-compliant architecture.
+                    </p>
+<div class="flex flex-wrap gap-2 mb-6 mt-auto">
+<span class="text-[10px] bg-[#f0f4f3] dark:bg-[#23332d] text-[#61897c] px-2 py-0.5 rounded uppercase font-semibold">React</span>
+<span class="text-[10px] bg-[#f0f4f3] dark:bg-[#23332d] text-[#61897c] px-2 py-0.5 rounded uppercase font-semibold">GraphQL</span>
+<span class="text-[10px] bg-[#f0f4f3] dark:bg-[#23332d] text-[#61897c] px-2 py-0.5 rounded uppercase font-semibold">PostgreSQL</span>
+</div>
+<button class="w-full py-3 rounded-lg border border-primary text-primary font-bold text-sm hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2 group/btn">
+                        View Case Study
+                        <span class="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Project Card 4 -->
+<div class="group flex flex-col bg-white dark:bg-[#1a2d26] rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="relative h-56 w-full overflow-hidden">
+<img alt="Project Image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Modern workspace with tech gadgets" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGgBND5PYFAAdg7BTsG5GPEVNepsgVoJMwKdHZJEQoF-XgCeE3_k2E0v4J5VBVEy0BLtmm12pGN-pj-nNcxjhTWJL1-mwOqcJPwqZ4jLH9qfbRGOYYFNkzA1nQAhN9v6Hd-cfP3idvxvkTi3HebjdhDy_8pf4QQg2Yj0rorDDH1KCmIDC-AUD2pg9_aRcQYR6eFJrmNJw-j0G8ut4r2Lu9SGRhcw1UfE-iL59bYbpb9cNbdq9ZiHflM4Q6cVKSrSJ4LFKISFIWcXQY"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 text-white text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded shadow-lg">E-commerce</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<h3 class="text-xl font-bold text-[#111816] dark:text-white mb-2 group-hover:text-primary transition-colors">GreenCart Platform</h3>
+<p class="text-[#61897c] dark:text-[#97b1a9] text-sm leading-relaxed mb-4 line-clamp-2">
+                        A headless e-commerce solution focused on sustainable brands, optimizing load times and conversion rates.
+                    </p>
+<div class="flex flex-wrap gap-2 mb-6 mt-auto">
+<span class="text-[10px] bg-[#f0f4f3] dark:bg-[#23332d] text-[#61897c] px-2 py-0.5 rounded uppercase font-semibold">Next.js</span>
+<span class="text-[10px] bg-[#f0f4f3] dark:bg-[#23332d] text-[#61897c] px-2 py-0.5 rounded uppercase font-semibold">Shopify</span>
+<span class="text-[10px] bg-[#f0f4f3] dark:bg-[#23332d] text-[#61897c] px-2 py-0.5 rounded uppercase font-semibold">Tailwind</span>
+</div>
+<button class="w-full py-3 rounded-lg border border-primary text-primary font-bold text-sm hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2 group/btn">
+                        View Case Study
+                        <span class="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Project Card 5 -->
+<div class="group flex flex-col bg-white dark:bg-[#1a2d26] rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="relative h-56 w-full overflow-hidden">
+<img alt="Project Image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Digital representation of artificial intelligence" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9EK1DXmxl2GdulYaur-tBT9am0-czVA6i8WL3k4EeD99c1ZE8RFmo4VwIIXUWv2kMkQoDNPxAvjXmwQL4Y5IhFUgMa_BZKF5JEcs1YN5j-0t8FsbiNM3HJfHv6QZyt32HJe-b0p7K3G2P6G2Zwxo4qnPrT5taeJLrv6hnaGyoQXrFYGXk5yD5nyA-QNBQPLjcjlyl4aDcO52KAZvUmP57ygRTj-leULR05XlbpqYZIEw6PnEJVryaVKzmZwxnGwEwFPK3W1FEa7Pw"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 text-white text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded shadow-lg">AI Solutions</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<h3 class="text-xl font-bold text-[#111816] dark:text-white mb-2 group-hover:text-primary transition-colors">Sentinel Security</h3>
+<p class="text-[#61897c] dark:text-[#97b1a9] text-sm leading-relaxed mb-4 line-clamp-2">
+                        AI-powered threat detection system that identifies network anomalies in real-time for enterprise security.
+                    </p>
+<div class="flex flex-wrap gap-2 mb-6 mt-auto">
+<span class="text-[10px] bg-[#f0f4f3] dark:bg-[#23332d] text-[#61897c] px-2 py-0.5 rounded uppercase font-semibold">TensorFlow</span>
+<span class="text-[10px] bg-[#f0f4f3] dark:bg-[#23332d] text-[#61897c] px-2 py-0.5 rounded uppercase font-semibold">Golang</span>
+<span class="text-[10px] bg-[#f0f4f3] dark:bg-[#23332d] text-[#61897c] px-2 py-0.5 rounded uppercase font-semibold">Kubernetes</span>
+</div>
+<button class="w-full py-3 rounded-lg border border-primary text-primary font-bold text-sm hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2 group/btn">
+                        View Case Study
+                        <span class="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Project Card 6 -->
+<div class="group flex flex-col bg-white dark:bg-[#1a2d26] rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="relative h-56 w-full overflow-hidden">
+<img alt="Project Image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Smart city infrastructure illustration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTuJR6owVvkeJacAuYqwA1bDUtlWsaar_MmeQfUST9szwLEvvhEceQyo1dHE-5T4-hDTWOM3NycPuBxoGlPiyv2QE_jbV6w-lDBVC5ajstJgN62C3C5RAqBc-Zmz9Vm6w864AvaSJUzW2s8F-3qiuzUmvrbuCFureiUeVN6la2_ub4-FLjqnonx7-B6OGzocTUmnxGWHwVR4fEhOB1WntKrvGQKsFO7DOmoRkvEK8DQNRPKeVvZDo7WVg4hM7WMa4SG_j89A9JQPzt"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 text-white text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded shadow-lg">Mobile Apps</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<h3 class="text-xl font-bold text-[#111816] dark:text-white mb-2 group-hover:text-primary transition-colors">Urban Mobility App</h3>
+<p class="text-[#61897c] dark:text-[#97b1a9] text-sm leading-relaxed mb-4 line-clamp-2">
+                        Multi-modal transportation app for smart cities, integrating public transit, ride-sharing, and bike-rentals.
+                    </p>
+<div class="flex flex-wrap gap-2 mb-6 mt-auto">
+<span class="text-[10px] bg-[#f0f4f3] dark:bg-[#23332d] text-[#61897c] px-2 py-0.5 rounded uppercase font-semibold">React Native</span>
+<span class="text-[10px] bg-[#f0f4f3] dark:bg-[#23332d] text-[#61897c] px-2 py-0.5 rounded uppercase font-semibold">Google Maps</span>
+<span class="text-[10px] bg-[#f0f4f3] dark:bg-[#23332d] text-[#61897c] px-2 py-0.5 rounded uppercase font-semibold">FastAPI</span>
+</div>
+<button class="w-full py-3 rounded-lg border border-primary text-primary font-bold text-sm hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2 group/btn">
+                        View Case Study
+                        <span class="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Load More Section -->
+<div class="flex flex-col items-center mt-16 gap-4">
+<p class="text-sm text-[#61897c] dark:text-[#97b1a9]">Showing 6 of 24 projects</p>
+<button class="flex items-center gap-2 bg-white dark:bg-[#23332d] border border-[#e5e7eb] dark:border-[#354841] px-10 py-4 rounded-xl text-[#111816] dark:text-white font-bold hover:bg-[#f0f4f3] dark:hover:bg-[#2c3e38] transition-all shadow-sm">
+                Load More Projects
+                <span class="material-symbols-outlined">refresh</span>
+</button>
+</div>
+</main>
+<!-- Footer Space -->
+<footer class="bg-white dark:bg-background-dark border-t border-[#f0f4f3] dark:border-[#2a3a35] py-12 mt-20">
+<div class="max-w-[1280px] mx-auto px-10 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<p class="text-[#111816] dark:text-white font-bold">Green Exchange Tech Labs</p>
+</div>
+<p class="text-sm text-[#61897c] dark:text-[#97b1a9]">© 2024 Green Exchange. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-[#61897c] hover:text-primary" href="#"><span class="material-symbols-outlined">language</span></a>
+<a class="text-[#61897c] hover:text-primary" href="#"><span class="material-symbols-outlined">mail</span></a>
+<a class="text-[#61897c] hover:text-primary" href="#"><span class="material-symbols-outlined">share</span></a>
+</div>
+</div>
+</footer>
+</body></html>
